@@ -10923,15 +10923,16 @@ function App() {
 			className: "w-full max-w-md bg-[#13141f] min-h-screen flex flex-col justify-between shadow-2xl relative pb-20 border-x border-slate-800/50",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+					style: { paddingTop: "calc(var(--tg-safe-area-inset-top, 0px) + 48px)" },
 					className: "p-4 glass-panel sticky top-0 z-50 flex items-center justify-between border-b border-slate-800",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "flex items-center gap-2",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/30",
-							children: "М"
+							children: "100"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 							className: "font-bold text-lg tracking-wide bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent",
-							children: "MathPro"
+							children: "Сотка!"
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "flex items-center gap-3",
@@ -11567,4 +11568,4 @@ function App() {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-vwQYd5_j.js.map
+//# sourceMappingURL=index-DEgqL8Nh.js.map
