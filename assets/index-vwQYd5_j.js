@@ -10883,7 +10883,7 @@ function App() {
 			score: "0/5"
 		}
 	];
-	useEffect(() => {
+	(0, import_react.useEffect)(() => {
 		const tg = window.Telegram?.WebApp;
 		if (tg) {
 			tg.ready();
@@ -11567,4 +11567,4 @@ function App() {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-C5e7pBHP.js.map
+//# sourceMappingURL=index-vwQYd5_j.js.map
