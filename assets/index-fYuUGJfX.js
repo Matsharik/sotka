@@ -11153,27 +11153,30 @@ function App() {
 					className: "flex-1 overflow-y-auto no-scrollbar p-4",
 					children: [
 						activeTab === "map" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "space-y-6",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
-									className: "text-xs text-slate-400 font-medium mb-1 block",
-									children: "Слой 1: Выберите тему"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
-									value: selectedTopic,
-									onChange: (e) => setSelectedTopic(e.target.value),
-									className: "w-full bg-slate-900 border border-slate-700 text-slate-200 text-sm rounded-xl p-3 outline-none focus:border-indigo-500",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Алгебра: Уравнения" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Геометрия: Треугольники" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Тригонометрия" }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Начала анализа" })
-									]
-								})] }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
-									className: "text-xs text-slate-400 font-medium mb-2 block",
-									children: "Слой 2: Разблокированные подтемы"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "flex gap-2 overflow-x-auto no-scrollbar pb-1",
+							className: "space-y-4 pb-6",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "sticky top-0 z-20 bg-[#FAF7F2]/95 backdrop-blur-md pt-1 pb-3 -mx-4 px-4 border-b border-[#E8DFCE] shadow-sm",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "mb-2.5",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
+										className: "text-[11px] font-bold text-[#8C7A6B] uppercase tracking-wider mb-1 block",
+										children: "Раздел знаний"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "relative",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
+											value: selectedTopic,
+											onChange: (e) => setSelectedTopic(e.target.value),
+											className: "w-full bg-white border-2 border-[#E8DFCE] text-[#2D2621] font-bold text-sm rounded-2xl p-3 pr-10 outline-none focus:border-[#0A8754] shadow-sm transition",
+											children: [
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Алгебра: Уравнения" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Геометрия: Треугольники" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Тригонометрия" }),
+												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Начала анализа" })
+											]
+										})
+									})]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "flex gap-2 overflow-x-auto no-scrollbar pb-0.5",
 									children: [
 										"Квадратные уравнения",
 										"Биквадратные",
@@ -11181,78 +11184,73 @@ function App() {
 										"Модули"
 									].map((sub, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 										onClick: () => setSelectedSubtopic(sub),
-										className: `px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap border transition ${selectedSubtopic === sub ? "bg-indigo-600 border-indigo-500 text-white shadow-lg shadow-indigo-600/30" : "bg-slate-900/80 border-slate-800 text-slate-400 hover:text-slate-200"}`,
+										className: `px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap border transition-all ${selectedSubtopic === sub ? "bg-[#0A8754] border-[#0A8754] text-white shadow-md shadow-[#0A8754]/20" : "bg-white border-[#E8DFCE] text-[#7A6C5D] hover:bg-[#F4EFE6]"}`,
 										children: [idx === 0 ? "✓ " : "", sub]
 									}, sub))
-								})] }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-900/60 rounded-2xl p-5 border border-slate-800/80 relative overflow-hidden",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex justify-between items-center mb-4",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", {
-											className: "font-bold text-sm text-slate-300",
-											children: [
-												"Слой 3: Карты полян (",
-												selectedSubtopic,
-												")"
-											]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[10px] text-indigo-400 bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/20",
-											children: "Строгий порядок"
-										})]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "relative py-4",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-											className: "absolute top-0 left-0 w-full h-full pointer-events-none path-pulse",
-											style: { zIndex: 0 },
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-												d: "M 50 40 Q 200 40 250 110 T 80 200 T 260 280",
-												fill: "transparent",
-												stroke: "#33374b",
-												strokeWidth: "6",
-												strokeLinecap: "round"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-												d: "M 50 40 Q 200 40 250 110 T 80 200 T 260 280",
-												fill: "transparent",
-												stroke: "#6366f1",
-												strokeWidth: "3",
-												strokeDasharray: "6 6",
-												strokeLinecap: "round"
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "space-y-12 relative z-10",
-											children: mapData.map((node, index) => {
-												const aligns = [
-													"justify-start pl-4",
-													"justify-end pr-8",
-													"justify-start pl-8",
-													"justify-end pr-4"
-												];
-												const isCurrent = node.status === "current";
-												const isDone = node.status === "completed";
-												return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: `flex items-center ${aligns[index % aligns.length]}`,
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-														disabled: node.status === "locked",
-														onClick: () => setActiveBlockId(node.id),
-														className: `group relative flex items-center gap-3 p-3 rounded-2xl border transition-all duration-300 text-left ${isCurrent ? "bg-indigo-950/90 border-indigo-500 text-white node-glow-active scale-105" : isDone ? "bg-slate-900 border-emerald-500/50 text-slate-200 node-glow-done" : "bg-slate-900/50 border-slate-800 text-slate-500 opacity-60 cursor-not-allowed"}`,
-														children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: `w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm ${isCurrent ? "bg-indigo-600 text-white" : isDone ? "bg-emerald-500/20 text-emerald-400" : "bg-slate-800 text-slate-600"}`,
-															children: isDone ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-5 h-5" }) : node.status === "locked" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Lock, { className: "w-4 h-4" }) : index + 1
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-															className: "text-xs font-bold",
-															children: node.title
-														}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-															className: "text-[10px] text-slate-400 mt-0.5",
-															children: ["Прогресс: ", node.score]
-														})] })]
-													})
-												}, node.id);
-											})
-										})]
+								}) })]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-white/80 rounded-2xl p-4 border border-[#E8DFCE] shadow-sm relative overflow-hidden mt-4",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex justify-between items-center mb-4",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										className: "font-bold text-sm text-[#2D2621]",
+										children: selectedSubtopic
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "text-[10px] font-bold text-[#0A8754] bg-[#0A8754]/10 px-2.5 py-1 rounded-lg border border-[#0A8754]/20",
+										children: "Последовательный путь"
 									})]
-								})
-							]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "relative py-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
+										className: "absolute top-0 left-0 w-full h-full pointer-events-none",
+										style: { zIndex: 0 },
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
+											d: "M 50 40 Q 200 40 250 110 T 80 200 T 260 280",
+											fill: "transparent",
+											stroke: "#E2D7C3",
+											strokeWidth: "6",
+											strokeLinecap: "round"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
+											d: "M 50 40 Q 200 40 250 110 T 80 200 T 260 280",
+											fill: "transparent",
+											stroke: "#0A8754",
+											strokeWidth: "3",
+											strokeDasharray: "6 6",
+											strokeLinecap: "round"
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "space-y-10 relative z-10",
+										children: mapData.map((node, index) => {
+											const aligns = [
+												"justify-start pl-2",
+												"justify-end pr-6",
+												"justify-start pl-6",
+												"justify-end pr-2"
+											];
+											const isCurrent = node.status === "current";
+											const isDone = node.status === "completed";
+											return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: `flex items-center ${aligns[index % aligns.length]}`,
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+													disabled: node.status === "locked",
+													onClick: () => setActiveBlockId(node.id),
+													className: `group relative flex items-center gap-3 p-3 rounded-2xl border-2 transition-all duration-300 text-left shadow-sm ${isCurrent ? "bg-white border-[#0A8754] text-[#2D2621] ring-4 ring-[#0A8754]/15 scale-105 shadow-md" : isDone ? "bg-[#F2F8F4] border-[#A8D5BA] text-[#2D2621]" : "bg-[#F0EBE1] border-[#DDD3C1] text-[#8C7A6B] opacity-70 cursor-not-allowed"}`,
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: `w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm ${isCurrent ? "bg-[#0A8754] text-white shadow-sm" : isDone ? "bg-[#0A8754]/15 text-[#0A8754]" : "bg-[#E2D7C3] text-[#8C7A6B]"}`,
+														children: isDone ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-5 h-5 text-[#0A8754]" }) : node.status === "locked" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Lock, { className: "w-4 h-4" }) : index + 1
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "text-xs font-bold text-[#2D2621]",
+														children: node.title.replace(/Поляна \d+: /, "")
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														className: "text-[10px] text-[#7A6C5D] font-medium mt-0.5",
+														children: ["Результат: ", node.score]
+													})] })]
+												})
+											}, node.id);
+										})
+									})]
+								})]
+							})]
 						}),
 						activeTab === "video" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-4",
@@ -11769,7 +11767,7 @@ function BottomNav({ activeTab, setActiveTab }) {
 		}
 	];
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
-		className: "fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-2 py-2 z-40 flex justify-between items-center shadow-lg",
+		className: "fixed bottom-0 left-0 right-0 bg-[#F4EFE6] border-t border-[#E2D7C3] px-2 py-2 z-40 flex justify-between items-center shadow-lg",
 		children: [mainNav.map((item) => {
 			const Icon = item.icon;
 			const isActive = activeTab === item.id;
@@ -11834,4 +11832,4 @@ function BottomNav({ activeTab, setActiveTab }) {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-DhfBAA39.js.map
+//# sourceMappingURL=index-fYuUGJfX.js.map
