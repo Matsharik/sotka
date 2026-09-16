@@ -10392,7 +10392,7 @@ function createLucideIcon(iconDataOrName, iconNode = [], aliases = []) {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$15 = {
+var __iconData$20 = {
 	name: "award",
 	size: 24,
 	node: [["path", {
@@ -10405,29 +10405,8 @@ var __iconData$15 = {
 		key: "1vp47v"
 	}]]
 };
-__iconData$15.node;
-var Award = createLucideIcon(__iconData$15);
-//#endregion
-//#region node_modules/lucide-react/dist/esm/icons/book-open.mjs
-/**
-* @license lucide-react v1.45.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
-var __iconData$14 = {
-	name: "book-open",
-	size: 24,
-	node: [["path", {
-		d: "M12 5v16",
-		key: "1f6ucr"
-	}], ["path", {
-		d: "M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z",
-		key: "1fyvmf"
-	}]]
-};
-__iconData$14.node;
-var BookOpen = createLucideIcon(__iconData$14);
+__iconData$20.node;
+var Award = createLucideIcon(__iconData$20);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/check.mjs
 /**
@@ -10436,7 +10415,7 @@ var BookOpen = createLucideIcon(__iconData$14);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$13 = {
+var __iconData$19 = {
 	name: "check",
 	size: 24,
 	node: [["path", {
@@ -10444,8 +10423,8 @@ var __iconData$13 = {
 		key: "1gmf2c"
 	}]]
 };
-__iconData$13.node;
-var Check = createLucideIcon(__iconData$13);
+__iconData$19.node;
+var Check = createLucideIcon(__iconData$19);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/chevron-right.mjs
 /**
@@ -10454,7 +10433,7 @@ var Check = createLucideIcon(__iconData$13);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$12 = {
+var __iconData$18 = {
 	name: "chevron-right",
 	size: 24,
 	node: [["path", {
@@ -10462,8 +10441,8 @@ var __iconData$12 = {
 		key: "mthhwq"
 	}]]
 };
-__iconData$12.node;
-var ChevronRight = createLucideIcon(__iconData$12);
+__iconData$18.node;
+var ChevronRight = createLucideIcon(__iconData$18);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/circle-check.mjs
 /**
@@ -10472,7 +10451,7 @@ var ChevronRight = createLucideIcon(__iconData$12);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$11 = {
+var __iconData$17 = {
 	name: "circle-check",
 	size: 24,
 	node: [["circle", {
@@ -10486,8 +10465,8 @@ var __iconData$11 = {
 	}]],
 	aliases: ["check-circle-2"]
 };
-__iconData$11.node;
-var CircleCheck = createLucideIcon(__iconData$11);
+__iconData$17.node;
+var CircleCheck = createLucideIcon(__iconData$17);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/circle-question-mark.mjs
 /**
@@ -10496,7 +10475,7 @@ var CircleCheck = createLucideIcon(__iconData$11);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$10 = {
+var __iconData$16 = {
 	name: "circle-question-mark",
 	size: 24,
 	node: [
@@ -10517,8 +10496,8 @@ var __iconData$10 = {
 	],
 	aliases: ["help-circle", "circle-help"]
 };
-__iconData$10.node;
-var CircleQuestionMark = createLucideIcon(__iconData$10);
+__iconData$16.node;
+var CircleQuestionMark = createLucideIcon(__iconData$16);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/copy.mjs
 /**
@@ -10527,7 +10506,7 @@ var CircleQuestionMark = createLucideIcon(__iconData$10);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$9 = {
+var __iconData$15 = {
 	name: "copy",
 	size: 24,
 	node: [["rect", {
@@ -10543,8 +10522,44 @@ var __iconData$9 = {
 		key: "zix9uf"
 	}]]
 };
-__iconData$9.node;
-var Copy = createLucideIcon(__iconData$9);
+__iconData$15.node;
+var Copy = createLucideIcon(__iconData$15);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/file-text.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$14 = {
+	name: "file-text",
+	size: 24,
+	node: [
+		["path", {
+			d: "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z",
+			key: "1oefj6"
+		}],
+		["path", {
+			d: "M14 2v5a1 1 0 0 0 1 1h5",
+			key: "wfsgrz"
+		}],
+		["path", {
+			d: "M10 9H8",
+			key: "b1mrlr"
+		}],
+		["path", {
+			d: "M16 13H8",
+			key: "t4e002"
+		}],
+		["path", {
+			d: "M16 17H8",
+			key: "z1uh3a"
+		}]
+	]
+};
+__iconData$14.node;
+var FileText = createLucideIcon(__iconData$14);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/flame.mjs
 /**
@@ -10553,7 +10568,7 @@ var Copy = createLucideIcon(__iconData$9);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$8 = {
+var __iconData$13 = {
 	name: "flame",
 	size: 24,
 	node: [["path", {
@@ -10561,8 +10576,97 @@ var __iconData$8 = {
 		key: "1slcih"
 	}]]
 };
-__iconData$8.node;
-var Flame = createLucideIcon(__iconData$8);
+__iconData$13.node;
+var Flame = createLucideIcon(__iconData$13);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/gamepad-2.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$12 = {
+	name: "gamepad-2",
+	size: 24,
+	node: [
+		["line", {
+			x1: "6",
+			x2: "10",
+			y1: "11",
+			y2: "11",
+			key: "1gktln"
+		}],
+		["line", {
+			x1: "8",
+			x2: "8",
+			y1: "9",
+			y2: "13",
+			key: "qnk9ow"
+		}],
+		["line", {
+			x1: "15",
+			x2: "15.01",
+			y1: "12",
+			y2: "12",
+			key: "krot7o"
+		}],
+		["line", {
+			x1: "18",
+			x2: "18.01",
+			y1: "10",
+			y2: "10",
+			key: "1lcuu1"
+		}],
+		["path", {
+			d: "M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z",
+			key: "mfqc10"
+		}]
+	]
+};
+__iconData$12.node;
+var Gamepad2 = createLucideIcon(__iconData$12);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/grid-3x3.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$11 = {
+	name: "grid-3x3",
+	size: 24,
+	node: [
+		["rect", {
+			width: "18",
+			height: "18",
+			x: "3",
+			y: "3",
+			rx: "2",
+			key: "afitv7"
+		}],
+		["path", {
+			d: "M3 9h18",
+			key: "1pudct"
+		}],
+		["path", {
+			d: "M3 15h18",
+			key: "5xshup"
+		}],
+		["path", {
+			d: "M9 3v18",
+			key: "fh3hqa"
+		}],
+		["path", {
+			d: "M15 3v18",
+			key: "14nvp0"
+		}]
+	],
+	aliases: ["grid", "grid-3-x-3"]
+};
+__iconData$11.node;
+var Grid3x3 = createLucideIcon(__iconData$11);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/lock.mjs
 /**
@@ -10571,7 +10675,7 @@ var Flame = createLucideIcon(__iconData$8);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$7 = {
+var __iconData$10 = {
 	name: "lock",
 	size: 24,
 	node: [["rect", {
@@ -10587,8 +10691,36 @@ var __iconData$7 = {
 		key: "fwvmzm"
 	}]]
 };
-__iconData$7.node;
-var Lock = createLucideIcon(__iconData$7);
+__iconData$10.node;
+var Lock = createLucideIcon(__iconData$10);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/map.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$9 = {
+	name: "map",
+	size: 24,
+	node: [
+		["path", {
+			d: "M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z",
+			key: "169xi5"
+		}],
+		["path", {
+			d: "M15 5.764v15",
+			key: "1pn4in"
+		}],
+		["path", {
+			d: "M9 3.236v15",
+			key: "1uimfh"
+		}]
+	]
+};
+__iconData$9.node;
+var Map$1 = createLucideIcon(__iconData$9);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/refresh-cw.mjs
 /**
@@ -10597,7 +10729,7 @@ var Lock = createLucideIcon(__iconData$7);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$6 = {
+var __iconData$8 = {
 	name: "refresh-cw",
 	size: 24,
 	node: [
@@ -10619,8 +10751,56 @@ var __iconData$6 = {
 		}]
 	]
 };
-__iconData$6.node;
-var RefreshCw = createLucideIcon(__iconData$6);
+__iconData$8.node;
+var RefreshCw = createLucideIcon(__iconData$8);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/share-2.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$7 = {
+	name: "share-2",
+	size: 24,
+	node: [
+		["circle", {
+			cx: "18",
+			cy: "5",
+			r: "3",
+			key: "gq8acd"
+		}],
+		["circle", {
+			cx: "6",
+			cy: "12",
+			r: "3",
+			key: "w7nqdw"
+		}],
+		["circle", {
+			cx: "18",
+			cy: "19",
+			r: "3",
+			key: "1xt0gg"
+		}],
+		["line", {
+			x1: "8.59",
+			x2: "15.42",
+			y1: "13.51",
+			y2: "17.49",
+			key: "47mynk"
+		}],
+		["line", {
+			x1: "15.41",
+			x2: "8.59",
+			y1: "6.51",
+			y2: "10.49",
+			key: "1n3mei"
+		}]
+	]
+};
+__iconData$7.node;
+var Share2 = createLucideIcon(__iconData$7);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/shield-alert.mjs
 /**
@@ -10629,7 +10809,7 @@ var RefreshCw = createLucideIcon(__iconData$6);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$5 = {
+var __iconData$6 = {
 	name: "shield-alert",
 	size: 24,
 	node: [
@@ -10647,8 +10827,8 @@ var __iconData$5 = {
 		}]
 	]
 };
-__iconData$5.node;
-var ShieldAlert = createLucideIcon(__iconData$5);
+__iconData$6.node;
+var ShieldAlert = createLucideIcon(__iconData$6);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/sparkles.mjs
 /**
@@ -10657,7 +10837,7 @@ var ShieldAlert = createLucideIcon(__iconData$5);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$4 = {
+var __iconData$5 = {
 	name: "sparkles",
 	size: 24,
 	node: [
@@ -10682,8 +10862,8 @@ var __iconData$4 = {
 	],
 	aliases: ["stars"]
 };
-__iconData$4.node;
-var Sparkles = createLucideIcon(__iconData$4);
+__iconData$5.node;
+var Sparkles = createLucideIcon(__iconData$5);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/trophy.mjs
 /**
@@ -10692,7 +10872,7 @@ var Sparkles = createLucideIcon(__iconData$4);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$3 = {
+var __iconData$4 = {
 	name: "trophy",
 	size: 24,
 	node: [
@@ -10722,8 +10902,33 @@ var __iconData$3 = {
 		}]
 	]
 };
+__iconData$4.node;
+var Trophy = createLucideIcon(__iconData$4);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/tv.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$3 = {
+	name: "tv",
+	size: 24,
+	node: [["path", {
+		d: "m17 2-5 5-5-5",
+		key: "16satq"
+	}], ["rect", {
+		width: "20",
+		height: "15",
+		x: "2",
+		y: "7",
+		rx: "2",
+		key: "1e6viu"
+	}]]
+};
 __iconData$3.node;
-var Trophy = createLucideIcon(__iconData$3);
+var Tv = createLucideIcon(__iconData$3);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/users.mjs
 /**
@@ -10759,7 +10964,7 @@ var __iconData$2 = {
 __iconData$2.node;
 var Users = createLucideIcon(__iconData$2);
 //#endregion
-//#region node_modules/lucide-react/dist/esm/icons/video.mjs
+//#region node_modules/lucide-react/dist/esm/icons/x.mjs
 /**
 * @license lucide-react v1.45.0 - ISC
 *
@@ -10767,22 +10972,18 @@ var Users = createLucideIcon(__iconData$2);
 * See the LICENSE file in the root directory of this source tree.
 */
 var __iconData$1 = {
-	name: "video",
+	name: "x",
 	size: 24,
 	node: [["path", {
-		d: "m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5",
-		key: "ftymec"
-	}], ["rect", {
-		x: "2",
-		y: "6",
-		width: "14",
-		height: "12",
-		rx: "2",
-		key: "158x01"
+		d: "M18 6 6 18",
+		key: "1bl5f8"
+	}], ["path", {
+		d: "m6 6 12 12",
+		key: "d8bk6v"
 	}]]
 };
 __iconData$1.node;
-var Video = createLucideIcon(__iconData$1);
+var X = createLucideIcon(__iconData$1);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/zap.mjs
 /**
@@ -10814,6 +11015,7 @@ var Zap = createLucideIcon(__iconData);
 */
 var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element");
+	var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
 	function jsxProd(type, config, maybeKey) {
 		var key = null;
 		void 0 !== maybeKey && (key = "" + maybeKey);
@@ -10831,6 +11033,7 @@ var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((expor
 			props: maybeKey
 		};
 	}
+	exports.Fragment = REACT_FRAGMENT_TYPE;
 	exports.jsx = jsxProd;
 	exports.jsxs = jsxProd;
 }));
@@ -11171,7 +11374,7 @@ function App() {
 								]
 							})
 						}),
-						activeTab === "battle" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						activeTab === "games" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-4",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "bg-slate-900 p-5 rounded-2xl border border-slate-800 text-center",
@@ -11495,77 +11698,140 @@ function App() {
 						})
 					]
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-					className: "glass-panel fixed bottom-0 max-w-md w-full border-t border-slate-800 p-2 z-50",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "flex justify-around items-center",
-						children: [
-							{
-								id: "map",
-								label: "Путь",
-								icon: BookOpen
-							},
-							{
-								id: "video",
-								label: "Уроки",
-								icon: Video
-							},
-							{
-								id: "test",
-								label: "Тест",
-								icon: RefreshCw
-							},
-							{
-								id: "exam",
-								label: "ЦТ 2026",
-								icon: Trophy
-							},
-							{
-								id: "battle",
-								label: "Дуэль",
-								icon: Flame
-							},
-							{
-								id: "formulas",
-								label: "Формулы",
-								icon: Sparkles
-							},
-							{
-								id: "hints",
-								label: "Подсказки",
-								icon: CircleQuestionMark
-							},
-							{
-								id: "referral",
-								label: "Реф",
-								icon: Users
-							},
-							{
-								id: "leaderboard",
-								label: "Топ",
-								icon: Award
-							}
-						].map((tab) => {
-							const Icon = tab.icon;
-							const isActive = activeTab === tab.id;
-							return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-								onClick: () => setActiveTab(tab.id),
-								className: `flex flex-col items-center p-1.5 rounded-xl transition ${isActive ? "text-indigo-400" : "text-slate-500 hover:text-slate-300"}`,
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "w-4 h-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-[9px] mt-1 font-medium",
-									children: tab.label
-								})]
-							}, tab.id);
-						})
-					})
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BottomNav, {
+					activeTab,
+					setActiveTab
 				})
 			]
 		})
 	});
+}
+function BottomNav({ activeTab, setActiveTab }) {
+	const [isMenuOpen, setIsMenuOpen] = (0, import_react.useState)(false);
+	const mainNav = [
+		{
+			id: "map",
+			label: "Путь",
+			icon: Map$1
+		},
+		{
+			id: "video",
+			label: "Уроки",
+			icon: Tv
+		},
+		{
+			id: "games",
+			label: "Игры",
+			icon: Gamepad2
+		},
+		{
+			id: "squads",
+			label: "Сквады",
+			icon: Users
+		}
+	];
+	const subMenu = [
+		{
+			id: "exam",
+			label: "ЦТ 2026",
+			icon: Trophy,
+			color: "bg-emerald-100 text-emerald-700"
+		},
+		{
+			id: "test",
+			label: "Тест",
+			icon: Award,
+			color: "bg-blue-100 text-blue-700"
+		},
+		{
+			id: "formulas",
+			label: "Формулы",
+			icon: Sparkles,
+			color: "bg-amber-100 text-amber-700"
+		},
+		{
+			id: "hints",
+			label: "Подсказки",
+			icon: CircleQuestionMark,
+			color: "bg-purple-100 text-purple-700"
+		},
+		{
+			id: "referral",
+			label: "Реф",
+			icon: Share2,
+			color: "bg-rose-100 text-rose-700"
+		},
+		{
+			id: "leaderboard",
+			label: "Топ",
+			icon: FileText,
+			color: "bg-indigo-100 text-indigo-700"
+		}
+	];
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+		className: "fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-2 py-2 z-40 flex justify-between items-center shadow-lg",
+		children: [mainNav.map((item) => {
+			const Icon = item.icon;
+			const isActive = activeTab === item.id;
+			return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+				onClick: () => {
+					setActiveTab(item.id);
+					setIsMenuOpen(false);
+				},
+				className: `flex-1 flex flex-col items-center justify-center py-1 rounded-xl transition-all ${isActive ? "text-emerald-600 font-bold scale-105" : "text-slate-500 font-medium"}`,
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: `w-6 h-6 mb-0.5 ${isActive ? "stroke-[2.5]" : "stroke-[1.75]"}` }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "text-[11px]",
+					children: item.label
+				})]
+			}, item.id);
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+			onClick: () => setIsMenuOpen(!isMenuOpen),
+			className: `flex-1 flex flex-col items-center justify-center py-1 rounded-xl transition-all ${isMenuOpen ? "text-emerald-600 font-bold" : "text-slate-500 font-medium"}`,
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Grid3x3, { className: "w-6 h-6 mb-0.5 stroke-[1.75]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "text-[11px]",
+				children: "Разделы"
+			})]
+		})]
+	}), isMenuOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-end animate-fadeIn",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "w-full bg-white rounded-t-3xl p-5 pb-24 shadow-2xl",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "flex justify-between items-center mb-4 pb-2 border-b border-slate-100",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+					className: "text-lg font-bold text-slate-800",
+					children: "Все разделы"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					onClick: () => setIsMenuOpen(false),
+					className: "p-1 rounded-full bg-slate-100 text-slate-500",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "w-5 h-5" })
+				})]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "grid grid-cols-3 gap-3",
+				children: subMenu.map((item) => {
+					const Icon = item.icon;
+					return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						onClick: () => {
+							setActiveTab(item.id);
+							setIsMenuOpen(false);
+						},
+						className: "flex flex-col items-center justify-center p-3 rounded-2xl bg-slate-50 border border-slate-100 active:scale-95 transition-all",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: `p-3 rounded-xl mb-2 ${item.color}`,
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "w-6 h-6" })
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "text-xs font-semibold text-slate-700",
+							children: item.label
+						})]
+					}, item.id);
+				})
+			})]
+		})
+	})] });
 }
 //#endregion
 //#region src/main.jsx
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-DEgqL8Nh.js.map
+//# sourceMappingURL=index-DhfBAA39.js.map
