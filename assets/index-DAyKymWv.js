@@ -11044,10 +11044,28 @@ function App() {
 			if (typeof tg.requestFullscreen === "function") tg.requestFullscreen();
 			if (typeof tg.disableVerticalSwipes === "function") tg.disableVerticalSwipes();
 		}
+		const initData = window.Telegram.WebApp.initData;
+		const startParam = window.Telegram.WebApp.initDataUnsafe?.start_param;
+		fetch("/api/user/sync", {
+			method: "POST",
+			headers: {
+				"Authorization": `Bearer ${initData}`,
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify({ startParam })
+		});
 		const fetchUserData = async () => {
 			try {
 				const initData = tg?.initData || "";
-				const res = await fetch(`${API_URL}user/profile`, { headers: { "Authorization": `Bearer ${initData}` } });
+				const startParam = tg?.initDataUnsafe?.start_param || "";
+				const res = await fetch(`${API_URL}user/profile`, {
+					method: "POST",
+					headers: {
+						"Authorization": `Bearer ${initData}`,
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({ startParam })
+				});
 				if (res.ok) {
 					const data = await res.json();
 					if (data.success && data.user) {
@@ -11847,4 +11865,4 @@ function BottomNav({ activeTab, setActiveTab }) {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-BO9N3NZU.js.map
+//# sourceMappingURL=index-DAyKymWv.js.map
