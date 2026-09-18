@@ -10392,7 +10392,7 @@ function createLucideIcon(iconDataOrName, iconNode = [], aliases = []) {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$18 = {
+var __iconData$19 = {
 	name: "award",
 	size: 24,
 	node: [["path", {
@@ -10405,8 +10405,8 @@ var __iconData$18 = {
 		key: "1vp47v"
 	}]]
 };
-__iconData$18.node;
-var Award = createLucideIcon(__iconData$18);
+__iconData$19.node;
+var Award = createLucideIcon(__iconData$19);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/check.mjs
 /**
@@ -10415,7 +10415,7 @@ var Award = createLucideIcon(__iconData$18);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$17 = {
+var __iconData$18 = {
 	name: "check",
 	size: 24,
 	node: [["path", {
@@ -10423,8 +10423,26 @@ var __iconData$17 = {
 		key: "1gmf2c"
 	}]]
 };
+__iconData$18.node;
+var Check = createLucideIcon(__iconData$18);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/chevron-down.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$17 = {
+	name: "chevron-down",
+	size: 24,
+	node: [["path", {
+		d: "m6 9 6 6 6-6",
+		key: "qrunsl"
+	}]]
+};
 __iconData$17.node;
-var Check = createLucideIcon(__iconData$17);
+var ChevronDown = createLucideIcon(__iconData$17);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/chevron-right.mjs
 /**
@@ -11865,4 +11883,4 @@ function BottomNav({ activeTab, setActiveTab }) {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-DAyKymWv.js.map
+//# sourceMappingURL=index-BvunCcLc.js.map
