@@ -11017,43 +11017,33 @@ var import_jsx_runtime = require_jsx_runtime();
 function App() {
 	const API_URL = "https://slovesny.ru/api-sotka/";
 	const [activeTab, setActiveTab] = (0, import_react.useState)("map");
+	const [isTopicPickerOpen, setIsTopicPickerOpen] = (0, import_react.useState)(false);
 	const [loading, setLoading] = (0, import_react.useState)(true);
+	const [copied, setCopied] = (0, import_react.useState)(false);
+	const [selectedSubject, setSelectedSubject] = (0, import_react.useState)("Математика");
+	const [selectedTopic, setSelectedTopic] = (0, import_react.useState)("Алгебра: Уравнения");
+	const [selectedSubtopic, setSelectedSubtopic] = (0, import_react.useState)("Квадратные уравнения");
+	const [activeBlockId, setActiveBlockId] = (0, import_react.useState)(2);
 	const [xp, setXp] = (0, import_react.useState)(0);
 	const [userClass, setUserClass] = (0, import_react.useState)(10);
 	const [isPro, setIsPro] = (0, import_react.useState)(false);
 	const [referralCode, setReferralCode] = (0, import_react.useState)("");
-	const [selectedTopic, setSelectedTopic] = (0, import_react.useState)("Алгебра: Уравнения");
-	const [selectedSubtopic, setSelectedSubtopic] = (0, import_react.useState)("Квадратные уравнения");
-	const [activeBlockId, setActiveBlockId] = (0, import_react.useState)(2);
 	const [payPlan, setPayPlan] = (0, import_react.useState)("indiv");
 	const [payDuration, setPayDuration] = (0, import_react.useState)("3m");
-	const [copied, setCopied] = (0, import_react.useState)(false);
-	const mapData = [
-		{
-			id: 1,
-			title: "Поляна 1: Дискриминант",
-			status: "completed",
-			score: "5/5"
-		},
-		{
-			id: 2,
-			title: "Поляна 2: Теорема Виета",
-			status: "current",
-			score: "0/5"
-		},
-		{
-			id: 3,
-			title: "Поляна 3: Дробно-рациональные",
-			status: "locked",
-			score: "0/5"
-		},
-		{
-			id: 4,
-			title: "Поляна 4: Уравнения с параметром",
-			status: "locked",
-			score: "0/5"
-		}
-	];
+	const mapData = (0, import_react.useMemo)(() => {
+		return Array.from({ length: 20 }, (_, index) => {
+			const blockNum = index + 1;
+			let status = "locked";
+			if (blockNum < activeBlockId) status = "completed";
+			else if (blockNum === activeBlockId) status = "current";
+			return {
+				id: blockNum,
+				title: `Поляна ${blockNum}: ${selectedSubtopic} (Часть ${blockNum})`,
+				status,
+				score: status === "completed" ? "10/10" : "0/10"
+			};
+		});
+	}, [selectedSubtopic, activeBlockId]);
 	(0, import_react.useEffect)(() => {
 		const tg = window.Telegram?.WebApp;
 		if (tg) {
@@ -11074,8 +11064,8 @@ function App() {
 		});
 		const fetchUserData = async () => {
 			try {
-				const initData = tg?.initData || "";
-				const startParam = tg?.initDataUnsafe?.start_param || "";
+				const initData = window.Telegram?.WebApp?.initData || "";
+				const startParam = window.Telegram?.WebApp?.initDataUnsafe?.start_param || "";
 				const res = await fetch(`${API_URL}user/profile`, {
 					method: "POST",
 					headers: {
@@ -11091,6 +11081,7 @@ function App() {
 						setXp(Number(u.xp ?? 0));
 						setUserClass(Number(u.grade_class ?? 10));
 						setIsPro(Boolean(u.is_pro));
+						if (u.current_subject) setSelectedSubject(u.current_subject);
 						setSelectedTopic(u.current_topic || "Алгебра: Уравнения");
 						setSelectedSubtopic(u.current_subtopic || "Квадратные уравнения");
 						setActiveBlockId(Number(u.active_block_id ?? 1));
@@ -11883,4 +11874,4 @@ function BottomNav({ activeTab, setActiveTab }) {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-BvunCcLc.js.map
+//# sourceMappingURL=index-DbqVgcqS.js.map
