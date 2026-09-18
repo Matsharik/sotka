@@ -10392,7 +10392,7 @@ function createLucideIcon(iconDataOrName, iconNode = [], aliases = []) {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$20 = {
+var __iconData$18 = {
 	name: "award",
 	size: 24,
 	node: [["path", {
@@ -10405,8 +10405,8 @@ var __iconData$20 = {
 		key: "1vp47v"
 	}]]
 };
-__iconData$20.node;
-var Award = createLucideIcon(__iconData$20);
+__iconData$18.node;
+var Award = createLucideIcon(__iconData$18);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/check.mjs
 /**
@@ -10415,7 +10415,7 @@ var Award = createLucideIcon(__iconData$20);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$19 = {
+var __iconData$17 = {
 	name: "check",
 	size: 24,
 	node: [["path", {
@@ -10423,8 +10423,8 @@ var __iconData$19 = {
 		key: "1gmf2c"
 	}]]
 };
-__iconData$19.node;
-var Check = createLucideIcon(__iconData$19);
+__iconData$17.node;
+var Check = createLucideIcon(__iconData$17);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/chevron-right.mjs
 /**
@@ -10433,7 +10433,7 @@ var Check = createLucideIcon(__iconData$19);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$18 = {
+var __iconData$16 = {
 	name: "chevron-right",
 	size: 24,
 	node: [["path", {
@@ -10441,32 +10441,8 @@ var __iconData$18 = {
 		key: "mthhwq"
 	}]]
 };
-__iconData$18.node;
-var ChevronRight = createLucideIcon(__iconData$18);
-//#endregion
-//#region node_modules/lucide-react/dist/esm/icons/circle-check.mjs
-/**
-* @license lucide-react v1.45.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
-var __iconData$17 = {
-	name: "circle-check",
-	size: 24,
-	node: [["circle", {
-		cx: "12",
-		cy: "12",
-		r: "10",
-		key: "1mglay"
-	}], ["path", {
-		d: "m16 9-5.5 5.5L8 12",
-		key: "xofnsj"
-	}]],
-	aliases: ["check-circle-2"]
-};
-__iconData$17.node;
-var CircleCheck = createLucideIcon(__iconData$17);
+__iconData$16.node;
+var ChevronRight = createLucideIcon(__iconData$16);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/circle-question-mark.mjs
 /**
@@ -10475,7 +10451,7 @@ var CircleCheck = createLucideIcon(__iconData$17);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$16 = {
+var __iconData$15 = {
 	name: "circle-question-mark",
 	size: 24,
 	node: [
@@ -10496,8 +10472,8 @@ var __iconData$16 = {
 	],
 	aliases: ["help-circle", "circle-help"]
 };
-__iconData$16.node;
-var CircleQuestionMark = createLucideIcon(__iconData$16);
+__iconData$15.node;
+var CircleQuestionMark = createLucideIcon(__iconData$15);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/copy.mjs
 /**
@@ -10506,7 +10482,7 @@ var CircleQuestionMark = createLucideIcon(__iconData$16);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$15 = {
+var __iconData$14 = {
 	name: "copy",
 	size: 24,
 	node: [["rect", {
@@ -10522,8 +10498,8 @@ var __iconData$15 = {
 		key: "zix9uf"
 	}]]
 };
-__iconData$15.node;
-var Copy = createLucideIcon(__iconData$15);
+__iconData$14.node;
+var Copy = createLucideIcon(__iconData$14);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/file-text.mjs
 /**
@@ -10532,7 +10508,7 @@ var Copy = createLucideIcon(__iconData$15);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$14 = {
+var __iconData$13 = {
 	name: "file-text",
 	size: 24,
 	node: [
@@ -10558,8 +10534,8 @@ var __iconData$14 = {
 		}]
 	]
 };
-__iconData$14.node;
-var FileText = createLucideIcon(__iconData$14);
+__iconData$13.node;
+var FileText = createLucideIcon(__iconData$13);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/flame.mjs
 /**
@@ -10568,7 +10544,7 @@ var FileText = createLucideIcon(__iconData$14);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$13 = {
+var __iconData$12 = {
 	name: "flame",
 	size: 24,
 	node: [["path", {
@@ -10576,8 +10552,8 @@ var __iconData$13 = {
 		key: "1slcih"
 	}]]
 };
-__iconData$13.node;
-var Flame = createLucideIcon(__iconData$13);
+__iconData$12.node;
+var Flame = createLucideIcon(__iconData$12);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/gamepad-2.mjs
 /**
@@ -10586,7 +10562,7 @@ var Flame = createLucideIcon(__iconData$13);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$12 = {
+var __iconData$11 = {
 	name: "gamepad-2",
 	size: 24,
 	node: [
@@ -10624,8 +10600,8 @@ var __iconData$12 = {
 		}]
 	]
 };
-__iconData$12.node;
-var Gamepad2 = createLucideIcon(__iconData$12);
+__iconData$11.node;
+var Gamepad2 = createLucideIcon(__iconData$11);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/grid-3x3.mjs
 /**
@@ -10634,7 +10610,7 @@ var Gamepad2 = createLucideIcon(__iconData$12);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$11 = {
+var __iconData$10 = {
 	name: "grid-3x3",
 	size: 24,
 	node: [
@@ -10665,34 +10641,8 @@ var __iconData$11 = {
 	],
 	aliases: ["grid", "grid-3-x-3"]
 };
-__iconData$11.node;
-var Grid3x3 = createLucideIcon(__iconData$11);
-//#endregion
-//#region node_modules/lucide-react/dist/esm/icons/lock.mjs
-/**
-* @license lucide-react v1.45.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
-var __iconData$10 = {
-	name: "lock",
-	size: 24,
-	node: [["rect", {
-		width: "18",
-		height: "11",
-		x: "3",
-		y: "11",
-		rx: "2",
-		ry: "2",
-		key: "1w4ew1"
-	}], ["path", {
-		d: "M7 11V7a5 5 0 0 1 10 0v4",
-		key: "fwvmzm"
-	}]]
-};
 __iconData$10.node;
-var Lock = createLucideIcon(__iconData$10);
+var Grid3x3 = createLucideIcon(__iconData$10);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/map.mjs
 /**
@@ -11153,104 +11103,178 @@ function App() {
 					className: "flex-1 overflow-y-auto no-scrollbar p-4",
 					children: [
 						activeTab === "map" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "space-y-4 pb-6",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "sticky top-0 z-20 bg-[#FAF7F2]/95 backdrop-blur-md pt-1 pb-3 -mx-4 px-4 border-b border-[#E8DFCE] shadow-sm",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "mb-2.5",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
-										className: "text-[11px] font-bold text-[#8C7A6B] uppercase tracking-wider mb-1 block",
-										children: "Раздел знаний"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "relative",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
-											value: selectedTopic,
-											onChange: (e) => setSelectedTopic(e.target.value),
-											className: "w-full bg-white border-2 border-[#E8DFCE] text-[#2D2621] font-bold text-sm rounded-2xl p-3 pr-10 outline-none focus:border-[#0A8754] shadow-sm transition",
+							className: "min-h-full pb-20",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "sticky top-0 z-30 bg-[#FAF7F2]/95 backdrop-blur-md px-4 py-3 border-b border-[#E8DFCE]",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										onClick: () => setIsTopicPickerOpen(!isTopicPickerOpen),
+										className: "w-full bg-white border-2 border-[#E8DFCE] active:border-[#0A8754] rounded-2xl p-3 flex justify-between items-center shadow-sm transition-all",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-3",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "w-9 h-9 rounded-xl bg-[#0A8754]/10 text-[#0A8754] flex items-center justify-center font-bold text-sm",
+												children: "📐"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "text-left",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-[10px] font-bold text-[#8C7A6B] uppercase tracking-wider block",
+													children: "Предмет / Раздел"
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-sm font-extrabold text-[#2D2621]",
+													children: selectedTopic
+												})]
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: `w-5 h-5 text-[#8C7A6B] transition-transform duration-300 ${isTopicPickerOpen ? "rotate-180" : ""}` })]
+									})
+								}),
+								isTopicPickerOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-start animate-fadeIn",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "w-full bg-[#FAF7F2] rounded-b-3xl p-5 shadow-2xl border-b border-[#E8DFCE] animate-slideDown",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex justify-between items-center mb-4 pb-2 border-b border-[#E8DFCE]",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+												className: "text-base font-extrabold text-[#2D2621]",
+												children: "Выберите раздел подготовки"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+												onClick: () => setIsTopicPickerOpen(false),
+												className: "p-1 rounded-full bg-[#E8DFCE]/50 text-[#6B5E52]",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "w-5 h-5" })
+											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "grid grid-cols-1 gap-2.5",
 											children: [
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Алгебра: Уравнения" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Геометрия: Треугольники" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Тригонометрия" }),
-												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "Начала анализа" })
-											]
-										})
-									})]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "flex gap-2 overflow-x-auto no-scrollbar pb-0.5",
-									children: [
-										"Квадратные уравнения",
-										"Биквадратные",
-										"Системы",
-										"Модули"
-									].map((sub, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-										onClick: () => setSelectedSubtopic(sub),
-										className: `px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap border transition-all ${selectedSubtopic === sub ? "bg-[#0A8754] border-[#0A8754] text-white shadow-md shadow-[#0A8754]/20" : "bg-white border-[#E8DFCE] text-[#7A6C5D] hover:bg-[#F4EFE6]"}`,
-										children: [idx === 0 ? "✓ " : "", sub]
-									}, sub))
-								}) })]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "bg-white/80 rounded-2xl p-4 border border-[#E8DFCE] shadow-sm relative overflow-hidden mt-4",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex justify-between items-center mb-4",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										className: "font-bold text-sm text-[#2D2621]",
-										children: selectedSubtopic
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-[10px] font-bold text-[#0A8754] bg-[#0A8754]/10 px-2.5 py-1 rounded-lg border border-[#0A8754]/20",
-										children: "Последовательный путь"
-									})]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "relative py-2",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-										className: "absolute top-0 left-0 w-full h-full pointer-events-none",
-										style: { zIndex: 0 },
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-											d: "M 50 40 Q 200 40 250 110 T 80 200 T 260 280",
-											fill: "transparent",
-											stroke: "#E2D7C3",
-											strokeWidth: "6",
-											strokeLinecap: "round"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", {
-											d: "M 50 40 Q 200 40 250 110 T 80 200 T 260 280",
-											fill: "transparent",
-											stroke: "#0A8754",
-											strokeWidth: "3",
-											strokeDasharray: "6 6",
-											strokeLinecap: "round"
+												{
+													id: "Алгебра: Уравнения",
+													icon: "⚡",
+													progress: "60%"
+												},
+												{
+													id: "Геометрия: Треугольники",
+													icon: "📐",
+													progress: "25%"
+												},
+												{
+													id: "Тригонометрия",
+													icon: "🔄",
+													progress: "0%"
+												},
+												{
+													id: "Начала анализа",
+													icon: "📈",
+													progress: "0%"
+												}
+											].map((topic) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+												onClick: () => {
+													setSelectedTopic(topic.id);
+													setIsTopicPickerOpen(false);
+												},
+												className: `p-3.5 rounded-2xl border-2 flex items-center justify-between transition-all ${selectedTopic === topic.id ? "bg-white border-[#0A8754] ring-2 ring-[#0A8754]/20 shadow-sm" : "bg-white/60 border-[#E8DFCE] hover:bg-white"}`,
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+													className: "flex items-center gap-3",
+													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-xl",
+														children: topic.icon
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+														className: "text-sm font-bold text-[#2D2621]",
+														children: topic.id
+													})]
+												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-xs font-bold text-[#0A8754] bg-[#0A8754]/10 px-2 py-1 rounded-lg",
+													children: topic.progress
+												})]
+											}, topic.id))
 										})]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "space-y-10 relative z-10",
-										children: mapData.map((node, index) => {
-											const aligns = [
-												"justify-start pl-2",
-												"justify-end pr-6",
-												"justify-start pl-6",
-												"justify-end pr-2"
-											];
-											const isCurrent = node.status === "current";
-											const isDone = node.status === "completed";
-											return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: `flex items-center ${aligns[index % aligns.length]}`,
-												children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-													disabled: node.status === "locked",
-													onClick: () => setActiveBlockId(node.id),
-													className: `group relative flex items-center gap-3 p-3 rounded-2xl border-2 transition-all duration-300 text-left shadow-sm ${isCurrent ? "bg-white border-[#0A8754] text-[#2D2621] ring-4 ring-[#0A8754]/15 scale-105 shadow-md" : isDone ? "bg-[#F2F8F4] border-[#A8D5BA] text-[#2D2621]" : "bg-[#F0EBE1] border-[#DDD3C1] text-[#8C7A6B] opacity-70 cursor-not-allowed"}`,
+									})
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "p-4 max-w-md mx-auto space-y-6",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "bg-white/90 border border-[#E8DFCE] rounded-2xl p-3 shadow-sm",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-[11px] font-bold text-[#8C7A6B] uppercase tracking-wider block mb-2 px-1",
+											children: "Выберите модуль темы:"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "grid grid-cols-2 gap-2",
+											children: [
+												{
+													id: "Квадратные уравнения",
+													tint: "border-[#0A8754] bg-[#F2F8F4]"
+												},
+												{
+													id: "Биквадратные",
+													tint: "border-[#C05621] bg-[#FAF3EE]"
+												},
+												{
+													id: "Системы",
+													tint: "border-[#2B6CB0] bg-[#EBF8FF]"
+												},
+												{
+													id: "Модули",
+													tint: "border-[#805AD5] bg-[#FAF5FF]"
+												}
+											].map((sub) => {
+												const isActive = selectedSubtopic === sub.id;
+												return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+													onClick: () => setSelectedSubtopic(sub.id),
+													className: `p-2.5 rounded-xl border-2 text-xs font-extrabold text-left transition-all ${isActive ? `${sub.tint} shadow-sm scale-[1.02]` : "border-[#E8DFCE] bg-white text-[#7A6C5D]"}`,
 													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: `w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm ${isCurrent ? "bg-[#0A8754] text-white shadow-sm" : isDone ? "bg-[#0A8754]/15 text-[#0A8754]" : "bg-[#E2D7C3] text-[#8C7A6B]"}`,
-														children: isDone ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-5 h-5 text-[#0A8754]" }) : node.status === "locked" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Lock, { className: "w-4 h-4" }) : index + 1
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-xs font-bold text-[#2D2621]",
-														children: node.title.replace(/Поляна \d+: /, "")
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-														className: "text-[10px] text-[#7A6C5D] font-medium mt-0.5",
-														children: ["Результат: ", node.score]
-													})] })]
-												})
-											}, node.id);
-										})
+														className: "text-[10px] opacity-60 font-semibold",
+														children: "Модуль"
+													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+														className: "truncate",
+														children: sub.id
+													})]
+												}, sub.id);
+											})
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "relative py-4",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute left-1/2 top-4 bottom-4 w-1 -translate-x-1/2 border-l-2 border-dashed border-[#C8BCA8]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "space-y-8 relative z-10",
+											children: mapData.map((node, index) => {
+												const isCurrent = node.id === activeBlockId;
+												const isDone = node.status === "completed";
+												const isLocked = node.status === "locked";
+												const alignClass = index % 2 === 0 ? "justify-start pr-12" : "justify-end pl-12";
+												return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+													className: `flex items-center ${alignClass}`,
+													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+														onClick: () => !isLocked && setActiveBlockId(node.id),
+														className: `w-full max-w-[260px] p-3.5 rounded-2xl border-2 transition-all cursor-pointer shadow-sm ${isCurrent ? "bg-white border-[#0A8754] ring-4 ring-[#0A8754]/15 scale-105 shadow-md" : isDone ? "bg-[#F2F8F4] border-[#A8D5BA]" : "bg-[#F0EBE1] border-[#DDD3C1] opacity-60"}`,
+														children: [
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+																className: "flex items-center justify-between mb-1",
+																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: `text-[10px] font-bold px-2 py-0.5 rounded-md ${isCurrent ? "bg-[#C05621] text-white" : isDone ? "bg-[#0A8754] text-white" : "bg-[#E2D7C3] text-[#7A6C5D]"}`,
+																	children: isDone ? "Пройдено" : isCurrent ? "Текущий" : "Заблокировано"
+																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+																	className: "text-[10px] font-bold text-[#7A6C5D]",
+																	children: node.score
+																})]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
+																className: "font-extrabold text-sm text-[#2D2621] mb-2",
+																children: [
+																	index + 1,
+																	". ",
+																	node.title.replace(/Поляна \d+: /, "")
+																]
+															}),
+															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+																disabled: isLocked,
+																className: `w-full py-1.5 rounded-xl font-bold text-xs transition-all ${isCurrent ? "bg-[#0A8754] text-white hover:bg-[#086E44]" : isDone ? "bg-white border border-[#0A8754] text-[#0A8754]" : "bg-[#E2D7C3] text-[#8C7A6B]"}`,
+																children: isCurrent ? "Начать урок" : isDone ? "Повторить" : "Закрыто"
+															})
+														]
+													})
+												}, node.id);
+											})
+										})]
 									})]
-								})]
-							})]
+								})
+							]
 						}),
 						activeTab === "video" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-4",
@@ -11459,15 +11483,12 @@ function App() {
 						activeTab === "hints" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-3",
 							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "flex justify-between items-center mb-1",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 										className: "text-base font-bold",
 										children: "Магазин подсказок"
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "text-xs text-amber-400 font-semibold flex items-center gap-1",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Zap, { className: "w-3.5 h-3.5 fill-amber-400" }), " 1,240 XP"]
-									})]
+									})
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "text-xs text-slate-400 mb-2",
@@ -11537,19 +11558,19 @@ function App() {
 									children: [
 										{
 											id: "1m",
-											label: "1 Месяц",
-											price: payPlan === "indiv" ? "29 BYN" : "180 BYN"
+											label: "1 месяц",
+											price: payPlan === "indiv" ? "9.90 BYN" : "49.90 BYN"
 										},
 										{
 											id: "3m",
-											label: "3 Месяца (Выгодно)",
-											price: payPlan === "indiv" ? "69 BYN" : "450 BYN",
-											badge: "ПОПУЛЯРНОЕ"
+											label: "3 месяца",
+											price: payPlan === "indiv" ? "24.90 BYN" : "129.90 BYN",
+											badge: "УСПЕТЬ ПРОЙТИ КУРС"
 										},
 										{
 											id: "ct",
-											label: "До самого ЦТ (Июнь)",
-											price: payPlan === "indiv" ? "119 BYN" : "790 BYN",
+											label: "До самого ЦТ/ЦЭ",
+											price: payPlan === "indiv" ? "49.90 BYN" : "249.90 BYN",
 											badge: "МАКСИМУМ"
 										}
 									].map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -11566,7 +11587,7 @@ function App() {
 											})]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "text-[10px] text-slate-500",
-											children: "Все обновления включены"
+											children: "Все обновления включены, по вопросам возврата средств пишите на mtshgames@gmail.com"
 										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 											className: "text-right",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -11602,7 +11623,7 @@ function App() {
 												"Приглашай друзей и получай ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 													className: "text-emerald-400 font-bold",
-													children: "20%"
+													children: "30%"
 												}),
 												" с каждой их оплаты прямо на свой кошелек!"
 											]
@@ -11620,20 +11641,14 @@ function App() {
 											className: "p-3 bg-slate-950 border border-slate-800 hover:border-indigo-500 rounded-xl text-left transition",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 												className: "text-xs font-bold text-slate-200",
-												children: "Бел. Рубли (BYN)"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "text-[10px] text-slate-500",
-												children: "Карта / ЕРИП"
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-											className: "p-3 bg-slate-950 border border-slate-800 hover:border-indigo-500 rounded-xl text-left transition",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "text-xs font-bold text-slate-200",
 												children: "Криптовалюта"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 												className: "text-[10px] text-slate-500",
-												children: "USDT (TRC20) / TON"
+												children: "USDT (BEP20) / TON"
 											})]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-[10px] text-slate-500",
+											children: "30% с оплат всех приглашенных Вами человек автоматически поступят на указанный адрес не позднее 10 дней после платежа. Адрес можно изменить в любое время."
 										})]
 									})]
 								}),
@@ -11662,7 +11677,7 @@ function App() {
 									children: "Общий лидерборд"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-[10px] text-slate-500",
-									children: "Обновляется live"
+									children: "Обновляется при открытии приложения"
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "space-y-2 max-h-[520px] overflow-y-auto no-scrollbar",
@@ -11832,4 +11847,4 @@ function BottomNav({ activeTab, setActiveTab }) {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-fYuUGJfX.js.map
+//# sourceMappingURL=index-BO9N3NZU.js.map
