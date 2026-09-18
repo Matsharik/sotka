@@ -10385,6 +10385,27 @@ function createLucideIcon(iconDataOrName, iconNode = [], aliases = []) {
 	return Component;
 }
 //#endregion
+//#region node_modules/lucide-react/dist/esm/icons/arrow-left.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$21 = {
+	name: "arrow-left",
+	size: 24,
+	node: [["path", {
+		d: "m12 19-7-7 7-7",
+		key: "1l729n"
+	}], ["path", {
+		d: "M19 12H5",
+		key: "x3x0zl"
+	}]]
+};
+__iconData$21.node;
+var ArrowLeft = createLucideIcon(__iconData$21);
+//#endregion
 //#region node_modules/lucide-react/dist/esm/icons/award.mjs
 /**
 * @license lucide-react v1.45.0 - ISC
@@ -10392,7 +10413,7 @@ function createLucideIcon(iconDataOrName, iconNode = [], aliases = []) {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$19 = {
+var __iconData$20 = {
 	name: "award",
 	size: 24,
 	node: [["path", {
@@ -10405,8 +10426,8 @@ var __iconData$19 = {
 		key: "1vp47v"
 	}]]
 };
-__iconData$19.node;
-var Award = createLucideIcon(__iconData$19);
+__iconData$20.node;
+var Award = createLucideIcon(__iconData$20);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/check.mjs
 /**
@@ -10415,7 +10436,7 @@ var Award = createLucideIcon(__iconData$19);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$18 = {
+var __iconData$19 = {
 	name: "check",
 	size: 24,
 	node: [["path", {
@@ -10423,8 +10444,8 @@ var __iconData$18 = {
 		key: "1gmf2c"
 	}]]
 };
-__iconData$18.node;
-var Check = createLucideIcon(__iconData$18);
+__iconData$19.node;
+var Check = createLucideIcon(__iconData$19);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/chevron-down.mjs
 /**
@@ -10433,7 +10454,7 @@ var Check = createLucideIcon(__iconData$18);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$17 = {
+var __iconData$18 = {
 	name: "chevron-down",
 	size: 24,
 	node: [["path", {
@@ -10441,8 +10462,8 @@ var __iconData$17 = {
 		key: "qrunsl"
 	}]]
 };
-__iconData$17.node;
-var ChevronDown = createLucideIcon(__iconData$17);
+__iconData$18.node;
+var ChevronDown = createLucideIcon(__iconData$18);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/chevron-right.mjs
 /**
@@ -10451,7 +10472,7 @@ var ChevronDown = createLucideIcon(__iconData$17);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$16 = {
+var __iconData$17 = {
 	name: "chevron-right",
 	size: 24,
 	node: [["path", {
@@ -10459,8 +10480,8 @@ var __iconData$16 = {
 		key: "mthhwq"
 	}]]
 };
-__iconData$16.node;
-var ChevronRight = createLucideIcon(__iconData$16);
+__iconData$17.node;
+var ChevronRight = createLucideIcon(__iconData$17);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/circle-question-mark.mjs
 /**
@@ -10469,7 +10490,7 @@ var ChevronRight = createLucideIcon(__iconData$16);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$15 = {
+var __iconData$16 = {
 	name: "circle-question-mark",
 	size: 24,
 	node: [
@@ -10490,8 +10511,31 @@ var __iconData$15 = {
 	],
 	aliases: ["help-circle", "circle-help"]
 };
+__iconData$16.node;
+var CircleQuestionMark = createLucideIcon(__iconData$16);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/clock.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$15 = {
+	name: "clock",
+	size: 24,
+	node: [["circle", {
+		cx: "12",
+		cy: "12",
+		r: "10",
+		key: "1mglay"
+	}], ["path", {
+		d: "M12 6v6l4 2",
+		key: "mmk7yg"
+	}]]
+};
 __iconData$15.node;
-var CircleQuestionMark = createLucideIcon(__iconData$15);
+var Clock = createLucideIcon(__iconData$15);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/copy.mjs
 /**
@@ -11011,10 +11055,273 @@ var require_jsx_runtime = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_jsx_runtime_production();
 }));
 //#endregion
-//#region src/App.jsx
+//#region src/components/VietaGame.jsx
 var import_client = /* @__PURE__ */ __toESM(require_client(), 1);
 var import_jsx_runtime = require_jsx_runtime();
+function VietaGame({ onFinish }) {
+	const [mode, setMode] = (0, import_react.useState)(1);
+	const [score, setScore] = (0, import_react.useState)(0);
+	const [level, setLevel] = (0, import_react.useState)(1);
+	const [currentTask, setCurrentTask] = (0, import_react.useState)(null);
+	const [selectedAnswers, setSelectedAnswers] = (0, import_react.useState)([]);
+	const generateTask = () => {
+		setSelectedAnswers([]);
+		if (mode === 1) {
+			const x1 = Math.floor(Math.random() * 10) - 5 || 1;
+			const x2 = Math.floor(Math.random() * 10) - 5 || 2;
+			const sum = x1 + x2;
+			const prod = x1 * x2;
+			const options = Array.from(/* @__PURE__ */ new Set([
+				x1,
+				x2,
+				x1 + 1,
+				x2 - 2,
+				-x1,
+				-x2,
+				x1 + 3
+			])).slice(0, 6);
+			setCurrentTask({
+				x1,
+				x2,
+				sum,
+				prod,
+				options: options.sort(() => Math.random() - .5)
+			});
+		} else if (mode === 2) {
+			const x1 = Math.floor(Math.random() * 12) - 6 || 1;
+			const x2 = Math.floor(Math.random() * 12) - 6 || -2;
+			const b = -(x1 + x2);
+			const c = x1 * x2;
+			const options = [
+				{
+					x1,
+					x2,
+					correct: true
+				},
+				{
+					x1: -x1,
+					x2: -x2,
+					correct: false
+				},
+				{
+					x1: x1 + 1,
+					x2: x2 - 1,
+					correct: false
+				},
+				{
+					x1: x2,
+					x2: -x1,
+					correct: false
+				}
+			].sort(() => Math.random() - .5);
+			setCurrentTask({
+				b,
+				c,
+				options
+			});
+		} else if (mode === 3) {
+			const a = 2;
+			const x1 = 3;
+			const x2 = -1;
+			const y1 = 6;
+			const y2 = -2;
+			const b = -4;
+			const ac = -12;
+			setCurrentTask({
+				a,
+				b,
+				c: ac / a,
+				ac,
+				y1,
+				y2,
+				x1,
+				x2,
+				step: 1
+			});
+		}
+	};
+	(0, import_react.useEffect)(() => {
+		generateTask();
+	}, [mode, level]);
+	const handleSelectFlyingNumber = (num) => {
+		if (selectedAnswers.length < 2) {
+			const next = [...selectedAnswers, num];
+			setSelectedAnswers(next);
+			if (next.length === 2) {
+				if (next[0] === currentTask.x1 && next[1] === currentTask.x2 || next[0] === currentTask.x2 && next[1] === currentTask.x1) {
+					setScore(score + 10);
+					setLevel(level + 1);
+				} else setTimeout(() => setSelectedAnswers([]), 500);
+			}
+		}
+	};
+	const handleSelectPlate = (opt) => {
+		if (opt.correct) {
+			setScore(score + 15);
+			setLevel(level + 1);
+		} else generateTask();
+	};
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "space-y-4",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "bg-[#161826] p-4 rounded-2xl border border-slate-800 flex justify-between items-center",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "text-[10px] font-extrabold text-indigo-400 uppercase tracking-wider block",
+					children: "Теорема Виета"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+					className: "text-sm font-black text-slate-100",
+					children: [
+						mode === 1 && "1. Сумма и Произведение",
+						mode === 2 && "2. Выбор пластинки с корнями",
+						mode === 3 && "3. Метод переброски (a → c)"
+					]
+				})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-xl text-xs font-bold text-amber-400",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Zap, { className: "w-3.5 h-3.5 fill-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [score, " XP"] })]
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "grid grid-cols-3 gap-1.5 bg-[#121422] p-1 rounded-2xl border border-slate-800",
+				children: [
+					1,
+					2,
+					3
+				].map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+					onClick: () => setMode(m),
+					className: `py-2 text-[10px] font-extrabold rounded-xl transition ${mode === m ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30" : "text-slate-400 hover:text-slate-200"}`,
+					children: ["Режим ", m]
+				}, m))
+			}),
+			currentTask && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "bg-[#161826] p-5 rounded-2xl border border-slate-800 text-center min-h-[260px] flex flex-col justify-between shadow-xl",
+				children: [
+					mode === 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "space-y-1 my-auto",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "text-xs text-slate-400",
+							children: "Найди два числа $x_1$ и $x_2$:"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "text-sm font-bold text-indigo-300",
+							children: [
+								"$x_1 + x_2 = ",
+								currentTask.sum,
+								"$ \xA0|\xA0 $x_1 \\cdot x_2 = ",
+								currentTask.prod,
+								"$"
+							]
+						})]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "grid grid-cols-3 gap-3 my-4",
+						children: currentTask.options.map((num, i) => {
+							const isSelected = selectedAnswers.includes(num);
+							return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								onClick: () => handleSelectFlyingNumber(num),
+								className: `p-3.5 rounded-2xl font-black text-base border transition-all animate-bounce ${isSelected ? "bg-emerald-500 border-emerald-400 text-slate-950 scale-105" : "bg-[#0f1019] border-slate-800 text-slate-100 hover:border-indigo-500"}`,
+								style: { animationDuration: `${2 + i % 3 * .5}s` },
+								children: num
+							}, i);
+						})
+					})] }),
+					mode === 2 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "my-auto space-y-2",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "text-xs text-slate-400",
+							children: "Выберите пластинку с решением уравнения:"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "text-lg font-mono font-black text-white",
+							children: [
+								"$x^2 ",
+								currentTask.b >= 0 ? `+ ${currentTask.b}` : `- ${Math.abs(currentTask.b)}`,
+								"x ",
+								currentTask.c >= 0 ? `+ ${currentTask.c}` : `- ${Math.abs(currentTask.c)}`,
+								" = 0$"
+							]
+						})]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "grid grid-cols-2 gap-2.5 mt-4",
+						children: currentTask.options.map((opt, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							onClick: () => handleSelectPlate(opt),
+							className: "p-3 bg-[#0f1019] hover:bg-indigo-600/20 border border-slate-800 hover:border-indigo-500 rounded-2xl text-xs font-bold text-slate-200 transition active:scale-95",
+							children: [
+								"$x_1 = ",
+								opt.x1,
+								", \\ x_2 = ",
+								opt.x2,
+								"$"
+							]
+						}, i))
+					})] }),
+					mode === 3 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "space-y-3 text-left",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "text-xs font-extrabold text-amber-400 bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/20",
+								children: [
+									"Шаг: Умножаем $c$ на $a = ",
+									currentTask.a,
+									"$"
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "text-xs font-mono text-slate-300 bg-[#0f1019] p-3 rounded-xl border border-slate-800",
+								children: [
+									"1. Исходное: $",
+									currentTask.a,
+									"x^2 ",
+									currentTask.b >= 0 ? `+ ${currentTask.b}` : currentTask.b,
+									"x ",
+									currentTask.c >= 0 ? `+ ${currentTask.c}` : currentTask.c,
+									" = 0$",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+									"2. Вспомогательное: $y^2 ",
+									currentTask.b >= 0 ? `+ ${currentTask.b}` : currentTask.b,
+									"y + (",
+									currentTask.ac,
+									") = 0$"
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "text-xs text-slate-400",
+								children: [
+									"Корни $y_1 = ",
+									currentTask.y1,
+									"$, $y_2 = ",
+									currentTask.y2,
+									"$. Делим их на $a = ",
+									currentTask.a,
+									"$:"
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								onClick: () => {
+									setScore(score + 20);
+									setLevel(level + 1);
+								},
+								className: "w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold rounded-xl text-xs transition shadow-lg shadow-emerald-950/40",
+								children: [
+									"Получить $x_1 = ",
+									currentTask.x1,
+									", \\ x_2 = ",
+									currentTask.x2,
+									"$"
+								]
+							})
+						]
+					})
+				]
+			})
+		]
+	});
+}
+//#endregion
+//#region src/App.jsx
 function App() {
+	const safeAlert = (msg) => {
+		const tg = window.Telegram?.WebApp;
+		if (tg?.showAlert) tg.showAlert(msg);
+		else alert(msg);
+	};
 	const API_URL = "https://slovesny.ru/api-sotka/";
 	const [activeTab, setActiveTab] = (0, import_react.useState)("map");
 	const [isTopicPickerOpen, setIsTopicPickerOpen] = (0, import_react.useState)(false);
@@ -11023,10 +11330,12 @@ function App() {
 	const [selectedSubject, setSelectedSubject] = (0, import_react.useState)("Математика");
 	const [selectedTopic, setSelectedTopic] = (0, import_react.useState)("Алгебра: Уравнения");
 	const [selectedSubtopic, setSelectedSubtopic] = (0, import_react.useState)("Квадратные уравнения");
+	const [selectedSubtopicView, setSelectedSubtopicView] = (0, import_react.useState)("list");
 	const [activeBlockId, setActiveBlockId] = (0, import_react.useState)(2);
-	const [xp, setXp] = (0, import_react.useState)(0);
+	const [xp, setXp] = (0, import_react.useState)(1240);
 	const [userClass, setUserClass] = (0, import_react.useState)(10);
-	const [isPro, setIsPro] = (0, import_react.useState)(false);
+	const [isPro, setIsPro] = (0, import_react.useState)(true);
+	const [proTimeLeft, setProTimeLeft] = (0, import_react.useState)("28д 14ч");
 	const [referralCode, setReferralCode] = (0, import_react.useState)("");
 	const [payPlan, setPayPlan] = (0, import_react.useState)("indiv");
 	const [payDuration, setPayDuration] = (0, import_react.useState)("3m");
@@ -11038,12 +11347,41 @@ function App() {
 			else if (blockNum === activeBlockId) status = "current";
 			return {
 				id: blockNum,
-				title: `Поляна ${blockNum}: ${selectedSubtopic} (Часть ${blockNum})`,
+				title: `Блок ${blockNum}: ${selectedSubtopic}`,
 				status,
 				score: status === "completed" ? "10/10" : "0/10"
 			};
 		});
 	}, [selectedSubtopic, activeBlockId]);
+	const handleCreateBattleRoom = async (stakeXp) => {
+		try {
+			const initData = (window.Telegram?.WebApp)?.initData || "";
+			const data = await (await fetch(`${API_URL}battle/create-room`, {
+				method: "POST",
+				headers: {
+					"Authorization": `Bearer ${initData}`,
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({ stake: stakeXp })
+			})).json();
+			if (data.success && data.roomCode) {
+				setBattleRoom({
+					code: data.roomCode,
+					stake: stakeXp,
+					status: "waiting"
+				});
+				setActiveTab("battle_lobby");
+			} else safeAlert(data.message || "Ошибка создания комнаты");
+		} catch (e) {
+			console.error("Battle Create Error:", e);
+		}
+	};
+	const handleCopyReferral = () => {
+		const refLink = `https://t.me/ct_matem_bot/app?startapp=ref_${referralCode}`;
+		navigator.clipboard.writeText(refLink);
+		setCopied(true);
+		setTimeout(() => setCopied(false), 2e3);
+	};
 	(0, import_react.useEffect)(() => {
 		const tg = window.Telegram?.WebApp;
 		if (tg) {
@@ -11052,16 +11390,6 @@ function App() {
 			if (typeof tg.requestFullscreen === "function") tg.requestFullscreen();
 			if (typeof tg.disableVerticalSwipes === "function") tg.disableVerticalSwipes();
 		}
-		const initData = window.Telegram.WebApp.initData;
-		const startParam = window.Telegram.WebApp.initDataUnsafe?.start_param;
-		fetch("/api/user/sync", {
-			method: "POST",
-			headers: {
-				"Authorization": `Bearer ${initData}`,
-				"Content-Type": "application/json"
-			},
-			body: JSON.stringify({ startParam })
-		});
 		const fetchUserData = async () => {
 			try {
 				const initData = window.Telegram?.WebApp?.initData || "";
@@ -11081,6 +11409,7 @@ function App() {
 						setXp(Number(u.xp ?? 0));
 						setUserClass(Number(u.grade_class ?? 10));
 						setIsPro(Boolean(u.is_pro));
+						if (u.pro_time_left) setProTimeLeft(u.pro_time_left);
 						if (u.current_subject) setSelectedSubject(u.current_subject);
 						setSelectedTopic(u.current_topic || "Алгебра: Уравнения");
 						setSelectedSubtopic(u.current_subtopic || "Квадратные уравнения");
@@ -11098,75 +11427,64 @@ function App() {
 		fetchUserData();
 	}, []);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "min-h-screen bg-[#0d0e15] text-slate-100 flex justify-center font-sans",
+		className: "min-h-screen bg-[#090a10] text-slate-100 flex justify-center font-sans selection:bg-indigo-500/30",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "w-full max-w-md bg-[#13141f] min-h-screen flex flex-col justify-between shadow-2xl relative pb-20 border-x border-slate-800/50",
+			className: "w-full max-w-md bg-[#0f1019] min-h-screen flex flex-col justify-between shadow-2xl relative pb-20 border-x border-slate-800/40",
 			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-					style: { paddingTop: "calc(var(--tg-safe-area-inset-top, 0px) + 48px)" },
-					className: "p-4 glass-panel sticky top-0 z-50 flex items-center justify-between border-b border-slate-800",
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					style: { paddingTop: "calc(var(--tg-safe-area-inset-top, 0px) + 8px)" },
+					className: "px-4 pt-3 pb-1 flex items-center justify-between",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-center gap-2",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/30",
-							children: "100"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "font-bold text-lg tracking-wide bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent",
-							children: "Сотка!"
-						})]
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-center gap-3",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "flex items-center gap-1 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-full text-xs text-amber-400 font-semibold",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Zap, { className: "w-3.5 h-3.5 fill-amber-400" }), " 1,240 XP"]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-							onClick: () => setActiveTab("payment"),
-							className: "bg-indigo-600 hover:bg-indigo-500 text-white px-3 py-1 rounded-full text-xs font-medium transition shadow-sm",
-							children: "PRO"
-						})]
+						className: "flex items-center gap-1.5 bg-[#161826] border border-amber-500/20 px-2.5 py-1 rounded-xl text-xs text-amber-400 font-bold",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Zap, { className: "w-3.5 h-3.5 fill-amber-400 text-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [xp ? xp.toLocaleString() : "1,240", " XP"] })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						onClick: () => setActiveTab("payment"),
+						className: "bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white px-3 py-1 rounded-xl text-xs font-extrabold transition shadow-md shadow-emerald-950/40 flex items-center gap-1.5 border border-emerald-400/30",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock, { className: "w-3.5 h-3.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: isPro ? proTimeLeft : "Подключить PRO" })]
 					})]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
 					className: "flex-1 overflow-y-auto no-scrollbar p-4",
 					children: [
 						activeTab === "map" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "min-h-full pb-20",
+							className: "min-h-full pb-16 space-y-4",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "sticky top-0 z-30 bg-[#FAF7F2]/95 backdrop-blur-md px-4 py-3 border-b border-[#E8DFCE]",
+									className: "sticky top-0 z-30 pt-1 pb-2 bg-[#0f1019]/90 backdrop-blur-md",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 										onClick: () => setIsTopicPickerOpen(!isTopicPickerOpen),
-										className: "w-full bg-white border-2 border-[#E8DFCE] active:border-[#0A8754] rounded-2xl p-3 flex justify-between items-center shadow-sm transition-all",
+										className: "w-full bg-[#161826] border border-slate-800 hover:border-indigo-500/50 active:scale-[0.99] rounded-2xl p-3 flex justify-between items-center shadow-lg transition-all",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 											className: "flex items-center gap-3",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "w-9 h-9 rounded-xl bg-[#0A8754]/10 text-[#0A8754] flex items-center justify-center font-bold text-sm",
+												className: "w-9 h-9 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center font-bold text-base",
 												children: "📐"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 												className: "text-left",
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-[10px] font-bold text-[#8C7A6B] uppercase tracking-wider block",
-													children: "Предмет / Раздел"
+													className: "text-[10px] font-bold text-slate-400 uppercase tracking-wider block",
+													children: "Раздел"
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-sm font-extrabold text-[#2D2621]",
+													className: "text-sm font-extrabold text-slate-100",
 													children: selectedTopic
 												})]
 											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: `w-5 h-5 text-[#8C7A6B] transition-transform duration-300 ${isTopicPickerOpen ? "rotate-180" : ""}` })]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: `w-5 h-5 text-slate-400 transition-transform duration-300 ${isTopicPickerOpen ? "rotate-180" : ""}` })]
 									})
 								}),
 								isTopicPickerOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-start animate-fadeIn",
+									className: "fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex items-start animate-fadeIn",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "w-full bg-[#FAF7F2] rounded-b-3xl p-5 shadow-2xl border-b border-[#E8DFCE] animate-slideDown",
+										className: "w-full bg-[#121422] rounded-b-3xl p-5 shadow-2xl border-b border-slate-800 animate-slideDown max-w-md mx-auto",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex justify-between items-center mb-4 pb-2 border-b border-[#E8DFCE]",
+											style: { paddingTop: "calc(var(--tg-safe-area-inset-top, 0px) + 16px)" },
+											className: "flex justify-between items-center mb-4 pb-3 border-b border-slate-800",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-												className: "text-base font-extrabold text-[#2D2621]",
+												className: "text-base font-extrabold text-slate-100",
 												children: "Выберите раздел подготовки"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 												onClick: () => setIsTopicPickerOpen(false),
-												className: "p-1 rounded-full bg-[#E8DFCE]/50 text-[#6B5E52]",
+												className: "p-1.5 rounded-xl bg-slate-800 text-slate-400 hover:text-white",
 												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "w-5 h-5" })
 											})]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -11178,7 +11496,7 @@ function App() {
 													progress: "60%"
 												},
 												{
-													id: "Геометрия: Треугольники",
+													id: "Геометрия",
 													icon: "📐",
 													progress: "25%"
 												},
@@ -11197,102 +11515,122 @@ function App() {
 													setSelectedTopic(topic.id);
 													setIsTopicPickerOpen(false);
 												},
-												className: `p-3.5 rounded-2xl border-2 flex items-center justify-between transition-all ${selectedTopic === topic.id ? "bg-white border-[#0A8754] ring-2 ring-[#0A8754]/20 shadow-sm" : "bg-white/60 border-[#E8DFCE] hover:bg-white"}`,
+												className: `p-3.5 rounded-2xl border flex items-center justify-between transition-all ${selectedTopic === topic.id ? "bg-indigo-600/15 border-indigo-500 ring-1 ring-indigo-500/40 text-white" : "bg-[#181a2e]/60 border-slate-800 hover:bg-[#181a2e] text-slate-300"}`,
 												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 													className: "flex items-center gap-3",
 													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 														className: "text-xl",
 														children: topic.icon
 													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-														className: "text-sm font-bold text-[#2D2621]",
+														className: "text-sm font-bold",
 														children: topic.id
 													})]
 												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-xs font-bold text-[#0A8754] bg-[#0A8754]/10 px-2 py-1 rounded-lg",
+													className: "text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-lg border border-indigo-500/20",
 													children: topic.progress
 												})]
 											}, topic.id))
 										})]
 									})
 								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "p-4 max-w-md mx-auto space-y-6",
+								selectedSubtopicView === "list" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-3",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-white/90 border border-[#E8DFCE] rounded-2xl p-3 shadow-sm",
+										className: "flex items-center justify-between px-1",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[11px] font-bold text-[#8C7A6B] uppercase tracking-wider block mb-2 px-1",
-											children: "Выберите модуль темы:"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "grid grid-cols-2 gap-2",
-											children: [
-												{
-													id: "Квадратные уравнения",
-													tint: "border-[#0A8754] bg-[#F2F8F4]"
-												},
-												{
-													id: "Биквадратные",
-													tint: "border-[#C05621] bg-[#FAF3EE]"
-												},
-												{
-													id: "Системы",
-													tint: "border-[#2B6CB0] bg-[#EBF8FF]"
-												},
-												{
-													id: "Модули",
-													tint: "border-[#805AD5] bg-[#FAF5FF]"
-												}
-											].map((sub) => {
-												const isActive = selectedSubtopic === sub.id;
-												return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-													onClick: () => setSelectedSubtopic(sub.id),
-													className: `p-2.5 rounded-xl border-2 text-xs font-extrabold text-left transition-all ${isActive ? `${sub.tint} shadow-sm scale-[1.02]` : "border-[#E8DFCE] bg-white text-[#7A6C5D]"}`,
-													children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "text-[10px] opacity-60 font-semibold",
-														children: "Модуль"
-													}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														className: "truncate",
-														children: sub.id
-													})]
-												}, sub.id);
-											})
+											className: "text-xs font-bold text-slate-400 uppercase tracking-wider",
+											children: "Подтемы раздела"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-xs text-indigo-400 font-semibold",
+											children: "4 модуля"
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "grid grid-cols-1 gap-3",
+										children: [
+											{
+												id: "Квадратные уравнения",
+												count: "20 блоков",
+												status: "В процессе"
+											},
+											{
+												id: "Биквадратные уравнения",
+												count: "20 блоков",
+												status: "Закрыто"
+											},
+											{
+												id: "Системы уравнений",
+												count: "20 блоков",
+												status: "Закрыто"
+											},
+											{
+												id: "Уравнения с модулем",
+												count: "20 блоков",
+												status: "Закрыто"
+											}
+										].map((sub) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+											onClick: () => {
+												setSelectedSubtopic(sub.id);
+												setSelectedSubtopicView("blocks");
+											},
+											className: "p-4 rounded-2xl border border-slate-800/80 bg-[#141625] hover:bg-[#1a1d30] text-left flex items-center justify-between transition-all shadow-md active:scale-[0.98]",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "text-sm font-extrabold text-slate-100",
+												children: sub.id
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "text-xs text-slate-400 mt-0.5",
+												children: sub.count
+											})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-5 h-5 text-slate-400" })]
+										}, sub.id))
+									})]
+								}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "space-y-4",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center justify-between bg-[#161826] border border-slate-800 p-2.5 rounded-2xl",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+											onClick: () => setSelectedSubtopicView("list"),
+											className: "flex items-center gap-1.5 text-xs font-bold text-indigo-400 hover:text-indigo-300 bg-indigo-500/10 px-3 py-1.5 rounded-xl border border-indigo-500/20 transition",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { className: "w-4 h-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "К подтемам" })]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-xs font-extrabold text-slate-200 truncate max-w-[180px]",
+											children: selectedSubtopic
 										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "relative py-4",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute left-1/2 top-4 bottom-4 w-1 -translate-x-1/2 border-l-2 border-dashed border-[#C8BCA8]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute left-1/2 top-4 bottom-4 w-1 -translate-x-1/2 bg-gradient-to-b from-emerald-500 via-indigo-500 to-slate-800 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.25)]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 											className: "space-y-8 relative z-10",
 											children: mapData.map((node, index) => {
 												const isCurrent = node.id === activeBlockId;
 												const isDone = node.status === "completed";
 												const isLocked = node.status === "locked";
-												const alignClass = index % 2 === 0 ? "justify-start pr-12" : "justify-end pl-12";
+												const alignClass = index % 2 === 0 ? "justify-start pr-8" : "justify-end pl-8";
 												return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 													className: `flex items-center ${alignClass}`,
 													children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 														onClick: () => !isLocked && setActiveBlockId(node.id),
-														className: `w-full max-w-[260px] p-3.5 rounded-2xl border-2 transition-all cursor-pointer shadow-sm ${isCurrent ? "bg-white border-[#0A8754] ring-4 ring-[#0A8754]/15 scale-105 shadow-md" : isDone ? "bg-[#F2F8F4] border-[#A8D5BA]" : "bg-[#F0EBE1] border-[#DDD3C1] opacity-60"}`,
+														className: `w-full max-w-[250px] p-4 rounded-2xl border transition-all cursor-pointer relative ${isCurrent ? "bg-[#151a2e] border-emerald-500 ring-4 ring-emerald-500/20 scale-105 shadow-xl animate-pulse" : isDone ? "bg-[#0c0d16] border-slate-800/80 opacity-40 grayscale hover:opacity-70" : "bg-[#090a12] border-slate-900/60 opacity-20 cursor-not-allowed"}`,
 														children: [
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-																className: "flex items-center justify-between mb-1",
+																className: "flex items-center justify-between mb-1.5",
 																children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: `text-[10px] font-bold px-2 py-0.5 rounded-md ${isCurrent ? "bg-[#C05621] text-white" : isDone ? "bg-[#0A8754] text-white" : "bg-[#E2D7C3] text-[#7A6C5D]"}`,
-																	children: isDone ? "Пройдено" : isCurrent ? "Текущий" : "Заблокировано"
+																	className: `text-[10px] font-extrabold px-2 py-0.5 rounded-md uppercase tracking-wider ${isCurrent ? "bg-emerald-500 text-slate-950 font-black" : isDone ? "bg-slate-800 text-slate-400" : "bg-slate-900 text-slate-600"}`,
+																	children: isDone ? "Пройдено" : isCurrent ? "Текущий" : "Закрыто"
 																}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-																	className: "text-[10px] font-bold text-[#7A6C5D]",
+																	className: "text-[10px] font-bold text-slate-400",
 																	children: node.score
 																})]
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", {
-																className: "font-extrabold text-sm text-[#2D2621] mb-2",
+																className: `font-extrabold text-sm mb-3 ${isDone ? "text-slate-400 line-through" : "text-slate-100"}`,
 																children: [
 																	index + 1,
 																	". ",
-																	node.title.replace(/Поляна \d+: /, "")
+																	node.title.replace(/Блок \d+: /, "")
 																]
 															}),
 															/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 																disabled: isLocked,
-																className: `w-full py-1.5 rounded-xl font-bold text-xs transition-all ${isCurrent ? "bg-[#0A8754] text-white hover:bg-[#086E44]" : isDone ? "bg-white border border-[#0A8754] text-[#0A8754]" : "bg-[#E2D7C3] text-[#8C7A6B]"}`,
-																children: isCurrent ? "Начать урок" : isDone ? "Повторить" : "Закрыто"
+																className: `w-full py-2 rounded-xl font-bold text-xs transition-all flex items-center justify-center gap-1.5 ${isCurrent ? "bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-md shadow-emerald-500/20" : isDone ? "bg-slate-800/60 border border-slate-700/50 text-slate-300" : "bg-slate-900/50 text-slate-600"}`,
+																children: isCurrent ? "Решать" : isDone ? "Повторить" : "Закрыто"
 															})
 														]
 													})
@@ -11309,11 +11647,11 @@ function App() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "flex items-center justify-between",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-										className: "text-lg font-bold",
+										className: "text-lg font-bold text-slate-100",
 										children: "Видео-урок"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-xs bg-slate-800 text-indigo-400 px-2.5 py-1 rounded-full font-medium border border-slate-700",
-										children: "Cloudflare R2 Direct"
+										className: "text-xs bg-indigo-500/10 text-indigo-400 px-2.5 py-1 rounded-full font-medium border border-indigo-500/20",
+										children: "Cloudflare R2"
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -11329,13 +11667,13 @@ function App() {
 									})
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-900/80 p-4 rounded-2xl border border-slate-800 space-y-2",
+									className: "bg-[#161826] p-4 rounded-2xl border border-slate-800 space-y-2",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										className: "font-bold text-sm",
+										className: "font-bold text-sm text-slate-100",
 										children: "Урок 4.2: Методы решения квадратных уравнений"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "text-xs text-slate-400 leading-relaxed",
-										children: "Разбор теории для ЦТ/ЕГЭ. Дискриминант, теорема Виета и разложение на множители. Смотрите внимательно, после урока откроется Поляна #2."
+										children: "Разбор теории для ЦТ/ЕГЭ. Дискриминант, теорема Виета и разложение на множители. Смотрите внимательно, после урока откроется следующий блок."
 									})]
 								})
 							]
@@ -11344,9 +11682,9 @@ function App() {
 							className: "space-y-4",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-900/80 p-4 rounded-2xl border border-slate-800",
+									className: "bg-[#161826] p-4 rounded-2xl border border-slate-800",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-										className: "text-base font-bold mb-1",
+										className: "text-base font-bold text-slate-100 mb-1",
 										children: "Стартовое тестирование / Выбор класса"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "text-xs text-slate-400",
@@ -11354,7 +11692,7 @@ function App() {
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "p-3.5 bg-amber-500/10 border border-amber-500/30 rounded-2xl flex gap-3 items-start",
+									className: "p-3.5 bg-amber-500/10 border border-amber-500/20 rounded-2xl flex gap-3 items-start",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldAlert, { className: "w-5 h-5 text-amber-400 shrink-0 mt-0.5" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 										className: "text-xs text-amber-200/90 leading-normal",
 										children: [
@@ -11378,14 +11716,14 @@ function App() {
 										10,
 										11
 									].map((cls) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-										className: "p-3.5 bg-slate-900 hover:bg-slate-800/80 border border-slate-800 rounded-xl text-left transition flex justify-between items-center",
+										className: "p-3.5 bg-[#161826] hover:bg-[#1e2034] border border-slate-800 rounded-xl text-left transition flex justify-between items-center",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "font-bold text-sm",
+											className: "font-bold text-sm text-slate-100",
 											children: [cls, " Класс"]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "text-[10px] text-slate-500",
+											className: "text-[10px] text-slate-400",
 											children: "База + Профиль"
-										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-4 h-4 text-slate-600" })]
+										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "w-4 h-4 text-slate-500" })]
 									}, cls))
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
@@ -11397,27 +11735,33 @@ function App() {
 						activeTab === "exam" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 							className: "space-y-4",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "bg-gradient-to-br from-indigo-900/40 to-purple-900/30 p-5 rounded-2xl border border-indigo-500/30",
+								className: "bg-gradient-to-br from-indigo-950/60 via-[#161826] to-[#121422] p-5 rounded-2xl border border-indigo-500/30 shadow-xl",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "flex justify-between items-start mb-3",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-											className: "text-base font-bold",
+											className: "text-base font-extrabold text-slate-100",
 											children: "Симулятор ЦТ / ЦЭ 2026"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 											className: "text-xs text-slate-400 mt-0.5",
 											children: "Полное соответствие спецификации РИКЗ"
 										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "bg-red-500/20 text-red-400 text-[10px] font-bold px-2 py-0.5 rounded border border-red-500/30",
+											className: "bg-rose-500/10 text-rose-400 text-[10px] font-extrabold px-2.5 py-1 rounded-lg border border-rose-500/20",
 											children: "120 МИН"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "text-xs text-slate-300 space-y-1 mb-4",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Часть А: 10 заданий с выбором ответа" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "• Часть Б: 20 заданий с открытым ответом" })]
+										className: "text-xs text-slate-300 space-y-1.5 mb-5 bg-[#0f1019]/60 p-3 rounded-xl border border-slate-800/60",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-indigo-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Часть А: 10 заданий с выбором ответа" })]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-2",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "w-1.5 h-1.5 rounded-full bg-indigo-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Часть Б: 20 заданий с открытым ответом" })]
+										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-										className: "w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold transition shadow-lg shadow-indigo-600/30",
+										className: "w-full py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold transition shadow-lg shadow-indigo-600/20 active:scale-[0.99]",
 										children: "Начать пробный экзамен"
 									})
 								]
@@ -11426,33 +11770,32 @@ function App() {
 						activeTab === "games" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-4",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "bg-slate-900 p-5 rounded-2xl border border-slate-800 text-center",
+								className: "bg-[#161826] p-5 rounded-2xl border border-slate-800 shadow-lg space-y-3",
 								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "w-12 h-12 bg-amber-500/10 border border-amber-500/20 rounded-2xl flex items-center justify-center mx-auto mb-3 text-amber-400",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Flame, { className: "w-6 h-6" })
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-										className: "text-base font-bold",
-										children: "Math Battle 1v1"
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "text-xs text-slate-400 mt-1",
-										children: "Решай задачи быстрее соперника в реальном времени!"
-									})
-								]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "bg-slate-900/60 p-4 rounded-2xl border border-slate-800 space-y-3",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										className: "text-xs font-bold text-slate-300",
-										children: "Создать приватную комнату"
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center justify-between",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "flex items-center gap-3",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+												className: "w-10 h-10 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400",
+												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Flame, { className: "w-5 h-5" })
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+												className: "text-sm font-extrabold text-slate-100",
+												children: "Math Battle 1v1"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-[10px] text-slate-400",
+												children: "Онлайн-дуэль в реальном времени"
+											})] })]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-[9px] bg-amber-500/10 border border-amber-500/20 text-amber-400 px-2 py-0.5 rounded-md font-bold uppercase",
+											children: "PvP"
+										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
-										className: "text-[10px] text-slate-500 block mb-1",
-										children: "Ставка (XP / Монеты)"
+										className: "text-[10px] text-slate-400 font-bold uppercase tracking-wider block mb-1.5",
+										children: "Ставка (XP)"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
-										className: "w-full bg-slate-950 border border-slate-800 text-xs rounded-xl p-2.5 outline-none",
+										className: "w-full bg-[#0f1019] border border-slate-800 text-slate-200 text-xs rounded-xl p-2.5 outline-none focus:border-indigo-500 transition",
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "50 XP (Дружеский дуэль)" }),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: "200 XP (Рейтинговый)" }),
@@ -11460,47 +11803,81 @@ function App() {
 										]
 									})] }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-										className: "w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl text-xs transition shadow-lg shadow-amber-500/20",
-										children: "Cоздать комнату и получить код"
+										onClick: () => handleCreateBattleRoom(50),
+										className: "w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold rounded-xl text-xs transition shadow-lg shadow-amber-500/20 active:scale-[0.99]",
+										children: "Создать комнату и получить код"
 									})
 								]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "bg-[#161826] p-5 rounded-2xl border border-slate-800 shadow-lg flex items-center justify-between",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex items-center gap-3",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "w-10 h-10 bg-indigo-500/10 border border-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-5 h-5" })
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "flex items-center gap-2",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+											className: "text-sm font-extrabold text-slate-100",
+											children: "Теорема Виета"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "text-[9px] bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 px-1.5 py-0.5 rounded font-bold uppercase",
+											children: "Соло"
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "text-[10px] text-slate-400 mt-0.5",
+										children: "Одиночный спринт • 3 подрежима"
+									})] })]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									onClick: () => setActiveTab("vieta"),
+									className: "px-4 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold rounded-xl text-xs transition shadow-md shadow-indigo-600/20 active:scale-[0.99] shrink-0",
+									children: "Играть"
+								})]
 							})]
+						}),
+						activeTab === "vieta" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "space-y-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								onClick: () => setActiveTab("games"),
+								className: "text-xs text-slate-400 hover:text-slate-200 flex items-center gap-1 font-bold transition py-1",
+								children: "← Назад к разделу игр"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(VietaGame, { onFinish: () => setActiveTab("games") })]
 						}),
 						activeTab === "formulas" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-4",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "flex justify-between items-center",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-									className: "text-base font-bold",
+									className: "text-base font-extrabold text-slate-100",
 									children: "Прогон пройденных формул"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-[10px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded",
-									children: "Только изученное (14)"
+									className: "text-[10px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-lg font-bold",
+									children: "Изучено: 14"
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "bg-gradient-to-br from-slate-900 to-indigo-950/40 p-6 rounded-2xl border border-indigo-500/30 min-h-[220px] flex flex-col justify-between text-center relative overflow-hidden",
+								className: "bg-gradient-to-br from-[#161826] via-[#121422] to-indigo-950/40 p-6 rounded-2xl border border-indigo-500/30 min-h-[220px] flex flex-col justify-between text-center relative overflow-hidden shadow-xl",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "text-[10px] text-indigo-400 font-semibold uppercase tracking-wider",
+										className: "text-[10px] text-indigo-400 font-extrabold uppercase tracking-wider",
 										children: "Алгебра • Дискриминант"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "my-auto space-y-2",
+										className: "my-auto space-y-2 py-4",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "text-2xl font-mono font-bold tracking-widest text-white",
+											className: "text-2xl font-mono font-black tracking-widest text-white",
 											children: "D = b² - 4ac"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "text-xs text-slate-400",
+											className: "text-xs text-slate-400 font-medium",
 											children: "Корни: x₁‚₂ = (-b ± √D) / (2a)"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "flex gap-2",
+										className: "flex gap-2.5",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-											className: "flex-1 py-2 bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 rounded-xl transition",
-											children: "Повторить позже"
+											className: "flex-1 py-2.5 bg-slate-800/80 hover:bg-slate-800 border border-slate-700/50 text-xs font-bold text-slate-300 rounded-xl transition",
+											children: "Повторить"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-											className: "flex-1 py-2 bg-emerald-600 hover:bg-emerald-500 text-xs text-white font-bold rounded-xl transition",
+											className: "flex-1 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-xs font-extrabold text-white rounded-xl transition shadow-md shadow-emerald-950/40",
 											children: "Знаю отлично"
 										})]
 									})
@@ -11509,51 +11886,44 @@ function App() {
 						}),
 						activeTab === "hints" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-3",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "flex justify-between items-center mb-1",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-										className: "text-base font-bold",
-										children: "Магазин подсказок"
-									})
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "text-xs text-slate-400 mb-2",
-									children: "Открывайте готовые решение для сложных задач за баллы XP"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "space-y-2.5 max-h-[480px] overflow-y-auto no-scrollbar pr-1",
-									children: [
-										1,
-										2,
-										3,
-										4,
-										5,
-										6,
-										7,
-										8
-									].map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 flex items-center justify-between",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+								className: "text-base font-extrabold text-slate-100",
+								children: "Магазин подсказок"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-xs text-slate-400 mt-0.5",
+								children: "Открывайте готовые решения для сложных задач за XP"
+							})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "space-y-2.5 max-h-[480px] overflow-y-auto no-scrollbar pr-1 pt-1",
+								children: [
+									1,
+									2,
+									3,
+									4,
+									5,
+									6,
+									7,
+									8
+								].map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "bg-[#161826] p-3.5 rounded-2xl border border-slate-800/80 flex items-center justify-between shadow-sm",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "space-y-0.5",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "space-y-0.5",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "text-xs font-bold text-slate-200",
-												children: [
-													"Задача B",
-													item,
-													": Неравенства с модулем"
-												]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "text-[10px] text-slate-500",
-												children: "Раздел: Алгебра 10-11 класс"
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-											className: "bg-indigo-600/20 hover:bg-indigo-600 border border-indigo-500/30 hover:border-indigo-500 text-indigo-300 hover:text-white px-3 py-1.5 rounded-lg text-xs font-medium transition flex items-center gap-1",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3 h-3" }), " 50 XP"]
+											className: "text-xs font-bold text-slate-200",
+											children: [
+												"Задача B",
+												item,
+												": Неравенства с модулем"
+											]
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "text-[10px] text-slate-400",
+											children: "Алгебра 10-11 класс"
 										})]
-									}, item))
-								})
-							]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										className: "bg-indigo-600/15 hover:bg-indigo-600 border border-indigo-500/30 hover:border-indigo-500 text-indigo-300 hover:text-white px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sparkles, { className: "w-3.5 h-3.5" }), " 50 XP"]
+									})]
+								}, item))
+							})]
 						}),
 						activeTab === "payment" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-5",
@@ -11561,22 +11931,22 @@ function App() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "text-center space-y-1",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-										className: "text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent",
+										className: "text-xl font-black bg-gradient-to-r from-indigo-400 via-purple-300 to-indigo-200 bg-clip-text text-transparent",
 										children: "Выберите подписку PRO"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "text-xs text-slate-400",
-										children: "Полный доступ ко всем полянам и разборам"
+										children: "Полный доступ ко всем полянам и видео-урокам"
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "grid grid-cols-2 p-1 bg-slate-900 rounded-xl border border-slate-800",
+									className: "grid grid-cols-2 p-1 bg-[#121422] rounded-2xl border border-slate-800",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										onClick: () => setPayPlan("indiv"),
-										className: `py-2 text-xs font-bold rounded-lg transition ${payPlan === "indiv" ? "bg-indigo-600 text-white shadow" : "text-slate-400"}`,
+										className: `py-2.5 text-xs font-extrabold rounded-xl transition ${payPlan === "indiv" ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30" : "text-slate-400 hover:text-slate-200"}`,
 										children: "Индивидуальный"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 										onClick: () => setPayPlan("team10"),
-										className: `py-2 text-xs font-bold rounded-lg transition ${payPlan === "team10" ? "bg-indigo-600 text-white shadow" : "text-slate-400"}`,
+										className: `py-2.5 text-xs font-extrabold rounded-xl transition ${payPlan === "team10" ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30" : "text-slate-400 hover:text-slate-200"}`,
 										children: "На 10 человек (-40%)"
 									})]
 								}),
@@ -11602,30 +11972,33 @@ function App() {
 										}
 									].map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										onClick: () => setPayDuration(item.id),
-										className: `p-4 rounded-2xl border cursor-pointer transition flex items-center justify-between ${payDuration === item.id ? "bg-indigo-950/60 border-indigo-500 text-white" : "bg-slate-900/60 border-slate-800 text-slate-400"}`,
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "flex items-center gap-2",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "font-bold text-sm text-slate-200",
-												children: item.label
-											}), item.badge && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-[9px] bg-amber-500/20 text-amber-300 font-bold px-1.5 py-0.5 rounded border border-amber-500/30",
-												children: item.badge
+										className: `p-4 rounded-2xl border cursor-pointer transition flex items-center justify-between ${payDuration === item.id ? "bg-indigo-600/15 border-indigo-500 text-white ring-1 ring-indigo-500/40 shadow-lg" : "bg-[#161826] border-slate-800 text-slate-400 hover:border-slate-700"}`,
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+											className: "space-y-1",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+												className: "flex items-center gap-2",
+												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "font-extrabold text-sm text-slate-100",
+													children: item.label
+												}), item.badge && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+													className: "text-[9px] bg-amber-500/15 text-amber-400 font-extrabold px-2 py-0.5 rounded-md border border-amber-500/20",
+													children: item.badge
+												})]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "text-[10px] text-slate-400",
+												children: "Все обновления включены. По вопросам: mtshgames@gmail.com"
 											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[10px] text-slate-500",
-											children: "Все обновления включены, по вопросам возврата средств пишите на mtshgames@gmail.com"
-										})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "text-right",
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "text-right shrink-0 pl-2",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "font-bold text-base text-white",
+												className: "font-black text-base text-white",
 												children: item.price
 											})
 										})]
 									}, item.id))
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-									className: "w-full py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold rounded-xl text-xs shadow-xl shadow-indigo-600/30 transition",
+									className: "w-full py-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-extrabold rounded-2xl text-xs shadow-xl shadow-indigo-600/25 transition active:scale-[0.99]",
 									children: ["Оплатить ", payPlan === "team10" ? "групповой доступ" : "подписку"]
 								})
 							]
@@ -11634,14 +12007,14 @@ function App() {
 							className: "space-y-4",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-900 p-5 rounded-2xl border border-slate-800 text-center space-y-2",
+									className: "bg-[#161826] p-5 rounded-2xl border border-slate-800 text-center space-y-2 shadow-lg",
 									children: [
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-											className: "w-12 h-12 bg-indigo-600/20 border border-indigo-500/30 text-indigo-400 rounded-2xl flex items-center justify-center mx-auto",
+											className: "w-12 h-12 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 rounded-2xl flex items-center justify-center mx-auto",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Users, { className: "w-6 h-6" })
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-											className: "text-base font-bold",
+											className: "text-base font-extrabold text-slate-100",
 											children: "Реферальная программа"
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -11649,7 +12022,7 @@ function App() {
 											children: [
 												"Приглашай друзей и получай ",
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-													className: "text-emerald-400 font-bold",
+													className: "text-emerald-400 font-extrabold",
 													children: "30%"
 												}),
 												" с каждой их оплаты прямо на свой кошелек!"
@@ -11658,38 +12031,29 @@ function App() {
 									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-900/60 p-4 rounded-2xl border border-slate-800 space-y-3",
+									className: "bg-[#161826] p-4 rounded-2xl border border-slate-800 space-y-3 shadow-lg",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
-										className: "text-xs font-bold text-slate-300 block",
+										className: "text-xs font-extrabold text-slate-200 block",
 										children: "Куда выводить заработанное?"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "grid grid-cols-2 gap-2",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-											className: "p-3 bg-slate-950 border border-slate-800 hover:border-indigo-500 rounded-xl text-left transition",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "text-xs font-bold text-slate-200",
-												children: "Криптовалюта"
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "text-[10px] text-slate-500",
-												children: "USDT (BEP20) / TON"
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "text-[10px] text-slate-500",
-											children: "30% с оплат всех приглашенных Вами человек автоматически поступят на указанный адрес не позднее 10 дней после платежа. Адрес можно изменить в любое время."
+										className: "p-3 bg-[#0f1019] border border-slate-800 rounded-xl space-y-1",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "text-xs font-bold text-slate-200",
+											children: "Криптовалюта (USDT / TON)"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											className: "text-[10px] text-slate-400 leading-relaxed",
+											children: "30% с оплат приглашенных поступают автоматически не позднее 10 дней после платежа."
 										})]
 									})]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-900 p-3.5 rounded-xl border border-slate-800 flex items-center justify-between gap-2",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										className: "text-xs font-mono text-slate-400 truncate",
-										children: "mathpro.by/ref?id=839201"
+									className: "bg-[#161826] p-3 rounded-2xl border border-slate-800 flex items-center justify-between gap-2 shadow-md",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "text-xs font-mono text-slate-300 truncate pl-2",
+										children: ["mathpro.by/ref?id=", referralCode || "839201"]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-										onClick: () => {
-											setCopied(true);
-											setTimeout(() => setCopied(false), 2e3);
-										},
-										className: "bg-indigo-600 hover:bg-indigo-500 text-white p-2 rounded-lg text-xs font-medium transition shrink-0",
+										onClick: handleCopyReferral,
+										className: "bg-indigo-600 hover:bg-indigo-500 text-white p-2.5 rounded-xl text-xs font-bold transition shrink-0 shadow-md shadow-indigo-600/20",
 										children: copied ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { className: "w-4 h-4" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Copy, { className: "w-4 h-4" })
 									})]
 								})
@@ -11698,18 +12062,18 @@ function App() {
 						activeTab === "leaderboard" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "space-y-3",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex justify-between items-center mb-2",
+								className: "flex justify-between items-center mb-1",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-									className: "text-base font-bold",
+									className: "text-base font-extrabold text-slate-100",
 									children: "Общий лидерборд"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "text-[10px] text-slate-500",
-									children: "Обновляется при открытии приложения"
+									className: "text-[10px] text-slate-400",
+									children: "Обновлено только что"
 								})]
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "space-y-2 max-h-[520px] overflow-y-auto no-scrollbar",
+								className: "space-y-2 max-h-[520px] overflow-y-auto no-scrollbar pt-1",
 								children: Array.from({ length: 20 }).map((_, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "bg-slate-900/80 p-3 rounded-xl border border-slate-800/80 flex items-center justify-between",
+									className: "bg-[#161826] p-3 rounded-2xl border border-slate-800/80 flex items-center justify-between shadow-sm",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "flex items-center gap-3",
 										children: [
@@ -11718,19 +12082,19 @@ function App() {
 												children: ["#", i + 1]
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-												className: "w-8 h-8 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-xs font-bold text-slate-300",
+												className: "w-8 h-8 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-xs font-bold text-indigo-300",
 												children: String.fromCharCode(65 + i % 26)
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "text-xs font-semibold text-slate-200",
+												className: "text-xs font-extrabold text-slate-200",
 												children: ["Ученик_", 100 + i]
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "text-[10px] text-slate-500",
-												children: ["Пройдено полян: ", 45 - i]
+												className: "text-[10px] text-slate-400",
+												children: ["Пройдено блоков: ", 45 - i]
 											})] })
 										]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "text-xs font-bold text-indigo-400",
+										className: "text-xs font-extrabold text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-lg",
 										children: [3400 - i * 110, " XP"]
 									})]
 								}, i))
@@ -11765,9 +12129,9 @@ function BottomNav({ activeTab, setActiveTab }) {
 			icon: Gamepad2
 		},
 		{
-			id: "squads",
-			label: "Сквады",
-			icon: Users
+			id: "referral",
+			label: "Реф",
+			icon: Share2
 		}
 	];
 	const subMenu = [
@@ -11775,41 +12139,41 @@ function BottomNav({ activeTab, setActiveTab }) {
 			id: "exam",
 			label: "ЦТ 2026",
 			icon: Trophy,
-			color: "bg-emerald-100 text-emerald-700"
+			color: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
 		},
 		{
 			id: "test",
 			label: "Тест",
 			icon: Award,
-			color: "bg-blue-100 text-blue-700"
+			color: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20"
 		},
 		{
 			id: "formulas",
 			label: "Формулы",
 			icon: Sparkles,
-			color: "bg-amber-100 text-amber-700"
+			color: "bg-amber-500/10 text-amber-400 border-amber-500/20"
 		},
 		{
 			id: "hints",
 			label: "Подсказки",
 			icon: CircleQuestionMark,
-			color: "bg-purple-100 text-purple-700"
-		},
-		{
-			id: "referral",
-			label: "Реф",
-			icon: Share2,
-			color: "bg-rose-100 text-rose-700"
+			color: "bg-violet-500/10 text-violet-400 border-violet-500/20"
 		},
 		{
 			id: "leaderboard",
 			label: "Топ",
 			icon: FileText,
-			color: "bg-indigo-100 text-indigo-700"
+			color: "bg-teal-500/10 text-teal-400 border-teal-500/20"
+		},
+		{
+			id: "payment",
+			label: "PRO",
+			icon: Clock,
+			color: "bg-rose-500/10 text-rose-400 border-rose-500/20"
 		}
 	];
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
-		className: "fixed bottom-0 left-0 right-0 bg-[#F4EFE6] border-t border-[#E2D7C3] px-2 py-2 z-40 flex justify-between items-center shadow-lg",
+		className: "fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-[#0f1019]/90 backdrop-blur-xl border-t border-slate-800/80 px-2 py-2 z-40 flex justify-between items-center shadow-2xl",
 		children: [mainNav.map((item) => {
 			const Icon = item.icon;
 			const isActive = activeTab === item.id;
@@ -11818,32 +12182,32 @@ function BottomNav({ activeTab, setActiveTab }) {
 					setActiveTab(item.id);
 					setIsMenuOpen(false);
 				},
-				className: `flex-1 flex flex-col items-center justify-center py-1 rounded-xl transition-all ${isActive ? "text-emerald-600 font-bold scale-105" : "text-slate-500 font-medium"}`,
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: `w-6 h-6 mb-0.5 ${isActive ? "stroke-[2.5]" : "stroke-[1.75]"}` }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					className: "text-[11px]",
+				className: `flex-1 flex flex-col items-center justify-center py-1.5 rounded-xl transition-all ${isActive ? "text-indigo-400 font-extrabold scale-105" : "text-slate-400 hover:text-slate-200 font-medium"}`,
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: `w-5 h-5 mb-0.5 ${isActive ? "stroke-[2.5]" : "stroke-[1.75]"}` }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "text-[10px]",
 					children: item.label
 				})]
 			}, item.id);
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 			onClick: () => setIsMenuOpen(!isMenuOpen),
-			className: `flex-1 flex flex-col items-center justify-center py-1 rounded-xl transition-all ${isMenuOpen ? "text-emerald-600 font-bold" : "text-slate-500 font-medium"}`,
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Grid3x3, { className: "w-6 h-6 mb-0.5 stroke-[1.75]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-				className: "text-[11px]",
+			className: `flex-1 flex flex-col items-center justify-center py-1.5 rounded-xl transition-all ${isMenuOpen ? "text-indigo-400 font-extrabold" : "text-slate-400 hover:text-slate-200 font-medium"}`,
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Grid3x3, { className: "w-5 h-5 mb-0.5 stroke-[1.75]" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "text-[10px]",
 				children: "Разделы"
 			})]
 		})]
 	}), isMenuOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-end animate-fadeIn",
+		className: "fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex items-end animate-fadeIn",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "w-full bg-white rounded-t-3xl p-5 pb-24 shadow-2xl",
+			className: "w-full max-w-md mx-auto bg-[#121422] rounded-t-3xl p-5 pb-20 shadow-2xl border-t border-slate-800",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "flex justify-between items-center mb-4 pb-2 border-b border-slate-100",
+				className: "flex justify-between items-center mb-4 pb-3 border-b border-slate-800",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-					className: "text-lg font-bold text-slate-800",
+					className: "text-base font-extrabold text-slate-100",
 					children: "Все разделы"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 					onClick: () => setIsMenuOpen(false),
-					className: "p-1 rounded-full bg-slate-100 text-slate-500",
+					className: "p-1.5 rounded-xl bg-slate-800 text-slate-400 hover:text-white",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "w-5 h-5" })
 				})]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -11855,12 +12219,12 @@ function BottomNav({ activeTab, setActiveTab }) {
 							setActiveTab(item.id);
 							setIsMenuOpen(false);
 						},
-						className: "flex flex-col items-center justify-center p-3 rounded-2xl bg-slate-50 border border-slate-100 active:scale-95 transition-all",
+						className: "flex flex-col items-center justify-center p-3 rounded-2xl bg-[#181a2e]/60 border border-slate-800 hover:bg-[#181a2e] active:scale-95 transition-all",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: `p-3 rounded-xl mb-2 ${item.color}`,
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "w-6 h-6" })
+							className: `p-2.5 rounded-xl mb-2 border ${item.color}`,
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "w-5 h-5" })
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "text-xs font-semibold text-slate-700",
+							className: "text-xs font-bold text-slate-200",
 							children: item.label
 						})]
 					}, item.id);
@@ -11874,4 +12238,4 @@ function BottomNav({ activeTab, setActiveTab }) {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-DbqVgcqS.js.map
+//# sourceMappingURL=index-Po3d2y6v.js.map
