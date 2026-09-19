@@ -10392,7 +10392,7 @@ function createLucideIcon(iconDataOrName, iconNode = [], aliases = []) {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$21 = {
+var __iconData$23 = {
 	name: "arrow-left",
 	size: 24,
 	node: [["path", {
@@ -10403,8 +10403,8 @@ var __iconData$21 = {
 		key: "x3x0zl"
 	}]]
 };
-__iconData$21.node;
-var ArrowLeft = createLucideIcon(__iconData$21);
+__iconData$23.node;
+var ArrowLeft = createLucideIcon(__iconData$23);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/award.mjs
 /**
@@ -10413,7 +10413,7 @@ var ArrowLeft = createLucideIcon(__iconData$21);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$20 = {
+var __iconData$22 = {
 	name: "award",
 	size: 24,
 	node: [["path", {
@@ -10426,8 +10426,8 @@ var __iconData$20 = {
 		key: "1vp47v"
 	}]]
 };
-__iconData$20.node;
-var Award = createLucideIcon(__iconData$20);
+__iconData$22.node;
+var Award = createLucideIcon(__iconData$22);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/check.mjs
 /**
@@ -10436,7 +10436,7 @@ var Award = createLucideIcon(__iconData$20);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$19 = {
+var __iconData$21 = {
 	name: "check",
 	size: 24,
 	node: [["path", {
@@ -10444,8 +10444,8 @@ var __iconData$19 = {
 		key: "1gmf2c"
 	}]]
 };
-__iconData$19.node;
-var Check = createLucideIcon(__iconData$19);
+__iconData$21.node;
+var Check = createLucideIcon(__iconData$21);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/chevron-down.mjs
 /**
@@ -10454,7 +10454,7 @@ var Check = createLucideIcon(__iconData$19);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$18 = {
+var __iconData$20 = {
 	name: "chevron-down",
 	size: 24,
 	node: [["path", {
@@ -10462,8 +10462,8 @@ var __iconData$18 = {
 		key: "qrunsl"
 	}]]
 };
-__iconData$18.node;
-var ChevronDown = createLucideIcon(__iconData$18);
+__iconData$20.node;
+var ChevronDown = createLucideIcon(__iconData$20);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/chevron-right.mjs
 /**
@@ -10472,7 +10472,7 @@ var ChevronDown = createLucideIcon(__iconData$18);
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var __iconData$17 = {
+var __iconData$19 = {
 	name: "chevron-right",
 	size: 24,
 	node: [["path", {
@@ -10480,8 +10480,69 @@ var __iconData$17 = {
 		key: "mthhwq"
 	}]]
 };
+__iconData$19.node;
+var ChevronRight = createLucideIcon(__iconData$19);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/circle-alert.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$18 = {
+	name: "circle-alert",
+	size: 24,
+	node: [
+		["circle", {
+			cx: "12",
+			cy: "12",
+			r: "10",
+			key: "1mglay"
+		}],
+		["line", {
+			x1: "12",
+			x2: "12",
+			y1: "8",
+			y2: "12",
+			key: "1pkeuh"
+		}],
+		["line", {
+			x1: "12",
+			x2: "12.01",
+			y1: "16",
+			y2: "16",
+			key: "4dfq90"
+		}]
+	],
+	aliases: ["alert-circle"]
+};
+__iconData$18.node;
+var CircleAlert = createLucideIcon(__iconData$18);
+//#endregion
+//#region node_modules/lucide-react/dist/esm/icons/circle-check.mjs
+/**
+* @license lucide-react v1.45.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var __iconData$17 = {
+	name: "circle-check",
+	size: 24,
+	node: [["circle", {
+		cx: "12",
+		cy: "12",
+		r: "10",
+		key: "1mglay"
+	}], ["path", {
+		d: "m16 9-5.5 5.5L8 12",
+		key: "xofnsj"
+	}]],
+	aliases: ["check-circle-2"]
+};
 __iconData$17.node;
-var ChevronRight = createLucideIcon(__iconData$17);
+var CircleCheck = createLucideIcon(__iconData$17);
 //#endregion
 //#region node_modules/lucide-react/dist/esm/icons/circle-question-mark.mjs
 /**
@@ -11063,36 +11124,46 @@ function VietaGame({ onFinish }) {
 	const [score, setScore] = (0, import_react.useState)(0);
 	const [level, setLevel] = (0, import_react.useState)(1);
 	const [currentTask, setCurrentTask] = (0, import_react.useState)(null);
-	const [selectedAnswers, setSelectedAnswers] = (0, import_react.useState)([]);
+	const [selectedIndices, setSelectedIndices] = (0, import_react.useState)([]);
+	const [feedback, setFeedback] = (0, import_react.useState)(null);
+	const formatEquation = (a, b, c, varName = "x") => {
+		let eq = "";
+		if (a === 1) eq += `${varName}²`;
+		else if (a === -1) eq += `-${varName}²`;
+		else eq += `${a}${varName}²`;
+		if (b > 0) eq += ` + ${b === 1 ? "" : b}${varName}`;
+		else if (b < 0) eq += ` - ${Math.abs(b) === 1 ? "" : Math.abs(b)}${varName}`;
+		if (c > 0) eq += ` + ${c}`;
+		else if (c < 0) eq += ` - ${Math.abs(c)}`;
+		return `${eq} = 0`;
+	};
 	const generateTask = () => {
-		setSelectedAnswers([]);
+		setSelectedIndices([]);
+		setFeedback(null);
 		if (mode === 1) {
-			const x1 = Math.floor(Math.random() * 10) - 5 || 1;
-			const x2 = Math.floor(Math.random() * 10) - 5 || 2;
+			const x1 = Math.floor(Math.random() * 12) - 6 || 1;
+			const x2 = Math.floor(Math.random() * 12) - 6 || -2;
 			const sum = x1 + x2;
 			const prod = x1 * x2;
-			const options = Array.from(/* @__PURE__ */ new Set([
-				x1,
-				x2,
-				x1 + 1,
-				x2 - 2,
-				-x1,
-				-x2,
-				x1 + 3
-			])).slice(0, 6);
+			const pool = /* @__PURE__ */ new Set([x1, x2]);
+			while (pool.size < 6) {
+				const fake = Math.floor(Math.random() * 16) - 8;
+				if (fake !== 0) pool.add(fake);
+			}
+			const options = Array.from(pool).sort(() => Math.random() - .5);
 			setCurrentTask({
 				x1,
 				x2,
 				sum,
 				prod,
-				options: options.sort(() => Math.random() - .5)
+				options
 			});
 		} else if (mode === 2) {
-			const x1 = Math.floor(Math.random() * 12) - 6 || 1;
-			const x2 = Math.floor(Math.random() * 12) - 6 || -2;
+			const x1 = Math.floor(Math.random() * 10) - 5 || 2;
+			const x2 = Math.floor(Math.random() * 10) - 5 || -3;
 			const b = -(x1 + x2);
 			const c = x1 * x2;
-			const options = [
+			const rawOptions = [
 				{
 					x1,
 					x2,
@@ -11113,142 +11184,189 @@ function VietaGame({ onFinish }) {
 					x2: -x1,
 					correct: false
 				}
-			].sort(() => Math.random() - .5);
+			];
+			const uniqueOptions = [];
+			const seen = /* @__PURE__ */ new Set();
+			for (const opt of rawOptions) {
+				const key = `${opt.x1}_${opt.x2}`;
+				if (!seen.has(key)) {
+					seen.add(key);
+					uniqueOptions.push(opt);
+				}
+			}
 			setCurrentTask({
 				b,
 				c,
-				options
+				eqStr: formatEquation(1, b, c, "x"),
+				options: uniqueOptions.sort(() => Math.random() - .5)
 			});
 		} else if (mode === 3) {
-			const a = 2;
-			const x1 = 3;
-			const x2 = -1;
-			const y1 = 6;
-			const y2 = -2;
-			const b = -4;
-			const ac = -12;
+			const a = [
+				2,
+				3,
+				4,
+				5
+			][Math.floor(Math.random() * 4)];
+			const x1 = Math.floor(Math.random() * 8) - 4 || 1;
+			const x2 = Math.floor(Math.random() * 8) - 4 || -2;
+			const y1 = a * x1;
+			const y2 = a * x2;
+			const b = -(y1 + y2);
+			const ac = y1 * y2;
+			const c = ac / a;
+			const options = [
+				{
+					x1,
+					x2,
+					correct: true
+				},
+				{
+					x1: y1,
+					x2: y2,
+					correct: false
+				},
+				{
+					x1: -x1,
+					x2: -x2,
+					correct: false
+				},
+				{
+					x1: x1 + a,
+					x2: x2 - a,
+					correct: false
+				}
+			].sort(() => Math.random() - .5);
 			setCurrentTask({
 				a,
 				b,
-				c: ac / a,
+				c,
 				ac,
 				y1,
 				y2,
 				x1,
 				x2,
-				step: 1
+				origEq: formatEquation(a, b, c, "x"),
+				yEq: formatEquation(1, b, ac, "y"),
+				options
 			});
 		}
 	};
 	(0, import_react.useEffect)(() => {
 		generateTask();
 	}, [mode, level]);
-	const handleSelectFlyingNumber = (num) => {
-		if (selectedAnswers.length < 2) {
-			const next = [...selectedAnswers, num];
-			setSelectedAnswers(next);
-			if (next.length === 2) {
-				if (next[0] === currentTask.x1 && next[1] === currentTask.x2 || next[0] === currentTask.x2 && next[1] === currentTask.x1) {
-					setScore(score + 10);
-					setLevel(level + 1);
-				} else setTimeout(() => setSelectedAnswers([]), 500);
+	const handleSelectFlyingIndex = (index) => {
+		if (selectedIndices.includes(index) || selectedIndices.length >= 2) return;
+		const next = [...selectedIndices, index];
+		setSelectedIndices(next);
+		if (next.length === 2) {
+			const val1 = currentTask.options[next[0]];
+			const val2 = currentTask.options[next[1]];
+			if (val1 === currentTask.x1 && val2 === currentTask.x2 || val1 === currentTask.x2 && val2 === currentTask.x1) {
+				setFeedback("correct");
+				setTimeout(() => {
+					setScore((s) => s + 10);
+					setLevel((l) => l + 1);
+				}, 400);
+			} else {
+				setFeedback("wrong");
+				setTimeout(() => {
+					setSelectedIndices([]);
+					setFeedback(null);
+				}, 600);
 			}
 		}
 	};
-	const handleSelectPlate = (opt) => {
+	const handleSelectOption = (opt) => {
 		if (opt.correct) {
-			setScore(score + 15);
-			setLevel(level + 1);
-		} else generateTask();
+			setFeedback("correct");
+			setTimeout(() => {
+				setScore((s) => s + (mode === 3 ? 20 : 15));
+				setLevel((l) => l + 1);
+			}, 400);
+		} else {
+			setFeedback("wrong");
+			setTimeout(() => setFeedback(null), 600);
+		}
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "space-y-4",
+		className: "space-y-4 max-w-md mx-auto select-none",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "bg-[#161826] p-4 rounded-2xl border border-slate-800 flex justify-between items-center",
+				className: "bg-[#161826] p-4 rounded-2xl border border-slate-800 flex justify-between items-center shadow-lg",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "text-[10px] font-extrabold text-indigo-400 uppercase tracking-wider block",
 					children: "Теорема Виета"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
-					className: "text-sm font-black text-slate-100",
+					className: "text-xs font-black text-slate-100 mt-0.5",
 					children: [
-						mode === 1 && "1. Сумма и Произведение",
-						mode === 2 && "2. Выбор пластинки с корнями",
+						mode === 1 && "1. Поиск корней (x₁ и x₂)",
+						mode === 2 && "2. Выбор пластинки с ответом",
 						mode === 3 && "3. Метод переброски (a → c)"
 					]
 				})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-xl text-xs font-bold text-amber-400",
+					className: "flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/20 px-3 py-1.5 rounded-xl text-xs font-black text-amber-400",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Zap, { className: "w-3.5 h-3.5 fill-amber-400" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [score, " XP"] })]
 				})]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "grid grid-cols-3 gap-1.5 bg-[#121422] p-1 rounded-2xl border border-slate-800",
+				className: "grid grid-cols-3 gap-1 bg-[#121422] p-1 rounded-2xl border border-slate-800",
 				children: [
 					1,
 					2,
 					3
 				].map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 					onClick: () => setMode(m),
-					className: `py-2 text-[10px] font-extrabold rounded-xl transition ${mode === m ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30" : "text-slate-400 hover:text-slate-200"}`,
+					className: `py-2 text-[10px] font-extrabold rounded-xl transition-all ${mode === m ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30 font-black" : "text-slate-400 hover:text-slate-200"}`,
 					children: ["Режим ", m]
 				}, m))
 			}),
 			currentTask && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "bg-[#161826] p-5 rounded-2xl border border-slate-800 text-center min-h-[260px] flex flex-col justify-between shadow-xl",
+				className: `bg-[#161826] p-5 rounded-3xl border transition-all duration-300 shadow-xl min-h-[280px] flex flex-col justify-between ${feedback === "correct" ? "border-emerald-500/50 bg-emerald-950/10" : feedback === "wrong" ? "border-rose-500/50 bg-rose-950/10" : "border-slate-800"}`,
 				children: [
 					mode === 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "space-y-1 my-auto",
+						className: "space-y-1 text-center my-auto",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "text-xs text-slate-400",
-							children: "Найди два числа $x_1$ и $x_2$:"
+							className: "text-xs text-slate-400 font-medium",
+							children: "Найди два числа x₁ и x₂:"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "text-sm font-bold text-indigo-300",
+							className: "text-sm font-black text-indigo-300 font-mono bg-[#0f1019] py-2 px-3 rounded-xl border border-slate-800/80 inline-block",
 							children: [
-								"$x_1 + x_2 = ",
+								"x₁ + x₂ = ",
 								currentTask.sum,
-								"$ \xA0|\xA0 $x_1 \\cdot x_2 = ",
-								currentTask.prod,
-								"$"
+								" \xA0|\xA0 x₁ · x₂ = ",
+								currentTask.prod
 							]
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "grid grid-cols-3 gap-3 my-4",
-						children: currentTask.options.map((num, i) => {
-							const isSelected = selectedAnswers.includes(num);
+						className: "grid grid-cols-3 gap-2.5 my-4",
+						children: currentTask.options.map((num, idx) => {
+							const isSelected = selectedIndices.includes(idx);
 							return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-								onClick: () => handleSelectFlyingNumber(num),
-								className: `p-3.5 rounded-2xl font-black text-base border transition-all animate-bounce ${isSelected ? "bg-emerald-500 border-emerald-400 text-slate-950 scale-105" : "bg-[#0f1019] border-slate-800 text-slate-100 hover:border-indigo-500"}`,
-								style: { animationDuration: `${2 + i % 3 * .5}s` },
+								onClick: () => handleSelectFlyingIndex(idx),
+								className: `p-3.5 rounded-2xl font-black text-base border transition-all active:scale-95 ${isSelected ? "bg-indigo-600 border-indigo-400 text-white scale-105 shadow-lg shadow-indigo-600/40" : "bg-[#0f1019] border-slate-800 text-slate-100 hover:border-indigo-500/50"}`,
 								children: num
-							}, i);
+							}, idx);
 						})
 					})] }),
 					mode === 2 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "my-auto space-y-2",
+						className: "my-auto text-center space-y-2",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "text-xs text-slate-400",
-							children: "Выберите пластинку с решением уравнения:"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "text-lg font-mono font-black text-white",
-							children: [
-								"$x^2 ",
-								currentTask.b >= 0 ? `+ ${currentTask.b}` : `- ${Math.abs(currentTask.b)}`,
-								"x ",
-								currentTask.c >= 0 ? `+ ${currentTask.c}` : `- ${Math.abs(currentTask.c)}`,
-								" = 0$"
-							]
+							className: "text-xs text-slate-400 font-medium",
+							children: "Выберите пластинку с корнями уравнения:"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "text-base font-mono font-black text-slate-100 bg-[#0f1019] py-3 px-4 rounded-2xl border border-slate-800",
+							children: currentTask.eqStr
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "grid grid-cols-2 gap-2.5 mt-4",
 						children: currentTask.options.map((opt, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-							onClick: () => handleSelectPlate(opt),
-							className: "p-3 bg-[#0f1019] hover:bg-indigo-600/20 border border-slate-800 hover:border-indigo-500 rounded-2xl text-xs font-bold text-slate-200 transition active:scale-95",
+							onClick: () => handleSelectOption(opt),
+							className: "p-3.5 bg-[#0f1019] hover:bg-indigo-600/20 border border-slate-800 hover:border-indigo-500/50 rounded-2xl text-xs font-mono font-bold text-slate-200 transition active:scale-95 text-center",
 							children: [
-								"$x_1 = ",
+								"x₁ = ",
 								opt.x1,
-								", \\ x_2 = ",
-								opt.x2,
-								"$"
+								", x₂ = ",
+								opt.x2
 							]
 						}, i))
 					})] }),
@@ -11256,58 +11374,90 @@ function VietaGame({ onFinish }) {
 						className: "space-y-3 text-left",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "text-xs font-extrabold text-amber-400 bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/20",
+								className: "text-[11px] font-black text-amber-400 bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/20",
 								children: [
-									"Шаг: Умножаем $c$ на $a = ",
+									"Шаг 1: Перебрасываем a = ",
 									currentTask.a,
-									"$"
-								]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "text-xs font-mono text-slate-300 bg-[#0f1019] p-3 rounded-xl border border-slate-800",
-								children: [
-									"1. Исходное: $",
-									currentTask.a,
-									"x^2 ",
-									currentTask.b >= 0 ? `+ ${currentTask.b}` : currentTask.b,
-									"x ",
-									currentTask.c >= 0 ? `+ ${currentTask.c}` : currentTask.c,
-									" = 0$",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-									"2. Вспомогательное: $y^2 ",
-									currentTask.b >= 0 ? `+ ${currentTask.b}` : currentTask.b,
-									"y + (",
+									" в свободный член (ac = ",
 									currentTask.ac,
-									") = 0$"
+									")"
 								]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "text-xs text-slate-400",
+								className: "text-xs font-mono text-slate-300 bg-[#0f1019] p-3 rounded-xl border border-slate-800 space-y-1",
 								children: [
-									"Корни $y_1 = ",
-									currentTask.y1,
-									"$, $y_2 = ",
-									currentTask.y2,
-									"$. Делим их на $a = ",
-									currentTask.a,
-									"$:"
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "text-slate-500 text-[10px]",
+										children: "1. Исходное:"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "text-slate-200 font-bold",
+										children: currentTask.origEq
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										className: "text-slate-500 text-[10px] mt-1",
+										children: [
+											"2. Вспомогательное (y = ",
+											currentTask.a,
+											"x):"
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "text-indigo-300 font-bold",
+										children: currentTask.yEq
+									})
 								]
 							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-								onClick: () => {
-									setScore(score + 20);
-									setLevel(level + 1);
-								},
-								className: "w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold rounded-xl text-xs transition shadow-lg shadow-emerald-950/40",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "text-[11px] text-slate-400 font-medium",
 								children: [
-									"Получить $x_1 = ",
-									currentTask.x1,
-									", \\ x_2 = ",
-									currentTask.x2,
-									"$"
+									"Корни y: ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "font-mono text-slate-200 font-bold",
+										children: [
+											"y₁ = ",
+											currentTask.y1,
+											", y₂ = ",
+											currentTask.y2
+										]
+									}),
+									". Раздели их на ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "font-bold text-amber-400",
+										children: ["a = ", currentTask.a]
+									}),
+									", чтобы найти x₁ и x₂:"
 								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "grid grid-cols-2 gap-2 pt-1",
+								children: currentTask.options.map((opt, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+									onClick: () => handleSelectOption(opt),
+									className: "p-3 bg-[#0f1019] hover:bg-indigo-600/20 border border-slate-800 hover:border-indigo-500/50 rounded-xl text-xs font-mono font-bold text-slate-200 transition active:scale-95 text-center",
+									children: [
+										"x₁ = ",
+										opt.x1,
+										", x₂ = ",
+										opt.x2
+									]
+								}, i))
 							})
 						]
+					}),
+					feedback && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mt-3 flex items-center justify-center gap-1.5 text-xs font-black",
+						children: feedback === "correct" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "text-emerald-400 flex items-center gap-1",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, { className: "w-4 h-4" }),
+								" Верно! +",
+								mode === 3 ? 20 : mode === 2 ? 15 : 10,
+								" XP"
+							]
+						}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "text-rose-400 flex items-center gap-1",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleAlert, { className: "w-4 h-4" }), " Неверно, попробуй еще раз"]
+						})
 					})
 				]
 			})
@@ -12238,4 +12388,4 @@ function BottomNav({ activeTab, setActiveTab }) {
 import_client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion
 
-//# sourceMappingURL=index-Po3d2y6v.js.map
+//# sourceMappingURL=index-BdUJ0cOB.js.map
